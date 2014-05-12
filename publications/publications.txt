@@ -1,0 +1,652 @@
+2005
+
+Reducing the Communication Cost via Chain Pattern Scheduling
+F. Ciorba, T. Andronikos, I. Drositis, G. Papakonstantinou, P. Tsanakas
+EEE NCAOS, Cambridge USA, 2005
+Minimization of reversible wave cascades
+D. Voudouris, S. Stergiou, G. Papakonstantinou
+IEICE Trans. on Fundamentals, vol. E88-A, no.1, Jan. 2005.
+Hardware Implementation of Pan & Tomkis QRS Detection Algorithm
+C. Pavlatos, A. Dimopoulos, G. Manis, G. Papakonstantinou
+EMBEC 05, Prague, 2005
+Decomposition of Multi-Output Boolean Functions
+D. Voudouris, M. Kalathas, G. Papakonstantinou
+HERMCA 2005, Athens, 2005.
+An Embedded System for the Electrocardiogram Recognition
+C. Pavlatos, A. Dimopoulos, G. Papakonstantinou
+EMBEC 05, Prague, 2005.
+An embedded system for artificial intelligence applications
+I. Panagopoulos, C. Pavlatos, G. Papakonstantinou
+International Journal of Computational Intelligence, to be published
+Adaptive Cyclic Scheduling of Nested loops
+F. Ciorba, T. Andronikos, G. Papakonstantinou
+HERMCA 2005, Athens, 2005.
+2004
+
+Scheduling of Tiled Nested Loops onto a Cluster with a Fixed Number of SMP Nodes
+M. Athanasaki, E. Koukis, N. Koziris
+12-th Euromicro Conference on Parallel, Distributed and Network based Processing (PDP04), pp.424-433, A Coruna, Spain, February 11-13, 2004
+pdf file
+Multiple-value exclusive-or sum-of-products minimization algorithms
+S. Stergiou, D. Voudouris, G. Papakonstantinou
+IEICE Trans. On Fundamentals, vol. E87-A, no.5, May 2004
+Knowledge representation using a modified Early's algorithm
+C. Pavlatos, I. Panagopoulos, G. Papakonstantinou
+SETN, Samos
+Exact minimization of ESOP expressions with less than eight product terms
+S. Stergiou, G. Papakonstantinou
+Journal of Circuits, Systems and Computers, vol. 13, no. 1, February 2004
+A hardware extension of the risk microprocessor for attribute grammar evaluation
+I. Panagopoulos, C. Pavlatos, G. Papakonstantinou
+accepted ACM Symposium on Applied Computing, SAC 2004, Nicosia, Cyprus
+A fast and efficient heuristic ESOP minimization algorithm
+S. Stergiou, K. Daskalakis, G. Papakonstantinou
+GLSVLSI 2004, Boston
+2003
+
+Towards a general novel exact ESOP minimization methodology
+S. Stergiou, G. Papakonstantinou
+6th International Symposium on Representations and Methodology of Future Computing Technology, RM 2003, Trier, Germany
+Simple code generation for special UDLs
+F. Ciorba, T. Andronikos, D. Kamenopoulos, P. Theodoropoulos, G. Papakonstantinou
+BCI 2003, Thessaloniki, Greece
+Scheduling Nested Loops with the Least Number of Processors
+T. Andronikos, M. Kalathas, F.M. Ciorba, P. Theodoropoulos, G. Papakonstantinou, P. Tsanakas
+IASTED International Conference on Parallel and Distributed Computing and Networks, PDCN'2003, Innsbruck, Austria, February 10-13, 2003
+P-Peak detection with alternative Haar wavelet filter
+A. Alexandridi, I. Panagopoulos, G. Manis, G. Papakonstantinou
+IEEE International Symposium on Signal Processing and Information Technology, ISSPIT
+Hardware implementation of syntactic pattern recognition algorithms
+C. Pavlatos, A. Coulouris, G. Papakonstantinou
+IASTED International Conference on Signal Processing Pattern Recognition and Applications
+Efficient Scheduling of Tiled Iteration Spaces onto a Fixed Size Parallel Architecture
+M. Athanasaki, E. Koukis, N. Koziris
+9th Panhellenic Conference in Informatics, pp.178-192, Thessaloniki, Greece, November 21-23, 2003
+ps file
+An Efficient Scheduling of Uniform Dependence Loops
+T. Andronikos, M. Kalathas, F.M. Ciorba, P. Theodoropoulos, G. Papakonstantinou
+The 6th Hellenic European Research on Computer Mathematics & its Applications (HERCMA) Conference, Athens, Greece, September 25-27, 2003
+An Efficient Code Generation Technique for Tiled Iteration Spaces
+G. Goumas, M. Athanasaki, N.Koziris
+IEEE Transactions on Parallel and Distributed Systems, Vol.14 No.10 pp.1021-1034 (October 2003)
+A comparative evaluation of models and specification of language for embedded system design
+I. Panagopoulos, G. Papakonstantinou, N. Alexandridis
+PCI 2003, Thessaloniki, Greece
+2002
+
+Pipelined Scheduling of Tiled Nested Loops onto Clusters of SMPs using Memory Mapped Network Interfaces
+M. Athanasaki, A. Sotiropoulos, G. Tsoukalas, N. Koziris
+SuperComputing Conference on High Performance Networking and Computing (SC2002), Baltimore, Maryland, November 16-22, 2002
+pdf file
+Optimal loop parallelization in n-dimensional index spaces
+I. Drositis, T. Andronikos, M. Kalathas, G. Papakonstantinou and N. Koziris
+International Conference on Parallel and Distributed Processing Techniques and Applications,PDPTA'02, Las Vegas
+Handling advanced scheduling heuristics under a hardware compiler generation environment
+G. Economakos, P. Economakos, I. Poulakis, G. Papakonstantinou, and S. Georgoulis
+Knowledge Based Systems, vol. 15, Jan. 2002
+Geometric Scheduling of 2-D UET-UCT Uniform Dependence Loops
+I. Drossitis, T. Andronikos, G. Manis, G. Papakonstantinou and N. Koziris
+Proceedings of 10th Euromicro Workshop on Parallel, Distributed and Network-based Processing PDP'2002), Gran Canaria, Canary Islands, Spain, January 9-11, 2002.
+Enhancing the Performance of Tiled Loop Execution onto Clusters using Memory Mapped Network Interfaces Pipelined
+A. Sotiropoulos, G. Tsoukalas, N. Koziris
+Proceedings of 2nd Workshop on Communication Architecture for Clusters (CAC '02) , Int'l Parallel and Distributed Processing Symposium (IPDPS2002), Fort Lauderdale, Florida April 2002
+Efficient Utilization of Memory Mapped NICs onto Clusters using Pipelined Schedules
+A. Sotiropoulos, G. Tsoukalas, N. Koziris
+Proceedings of the 2nd IEEE International Symposium on Cluster Computing and the Grid (CCGrid 2002)
+Data Parallel Code Generation for Arbitrarily Tiled Nested Loops
+G. Goumas, N. Drosinos, M. Athanasaki, N.Koziris
+Proceedings of the 2002 International Conference on Parallel and Distributed Processing Techniques and Applications (PDPTA'02), pp. 610-616, Las Vegas, Nevada, USA, June 24-27, 2002
+ps file
+pdf file
+Compiling Tiled Iteration Spaces for Clusters
+G. Goumas, N. Drosinos, M. Athanasaki, N.Koziris
+Proceedings of the 4th IEEE International Conference on Cluster Computing (CLUSTER 2002), Chicago, Illinois, USA, September 24-26, 2002
+ps file
+pdf file
+Code Generation Methods for Tiling Transformations
+G. Goumas, M. Athanasaki, N.Koziris
+Journal of Information Science and Engineering, Vol.18 No.5, pp.667-691 (September 2002)
+pdf file
+Automatic Code Generation for Executing Tiled Nested Loops onto Parallel Architectures
+G. Goumas, M. Athanasaki and N. Koziris
+Proceedings of the 2002 ACM Symposium on Applied Computing (SAC 2002) - Parallel and Distributed Systmes and Networking Track, Madrid, Spain, March 10-14, 2002
+ps file
+pdf file
+Analyzing the 24-Hour Blood Pressure and Heart-Rate Variability with Self-Organizing Feauture Maps
+G. Tambouratzis,G. Papakonstantinou, S.Stamatelopoulos, N. Zakopoulos, S. Moulopoulos
+International Journal of Intelligent Systems, vol. 17, Jan. 2002
+An efficient algorithm for exact ESOP minimization
+S. Stergiou, G. Papakonstantinou
+International Conference on VLSI, VLSI'02, Las Vegas
+A Pipelined Execution of Tiled Nested Loops on SMPs with Computation and Communication Overlapping
+M. Athanasaki, A. Sotiropoulos, G. Tsoukalas, N. Koziris
+Proceedings of the Workshop on Compile/Runtime Techniques for Parallel Computing, held with 2002 International Conference on Parallel Processing (ICPP-2002), IEEE Press, Vancouver, British Columbia, Canada, August 18-21, 2002
+pdf file
+A novel reconfigurable processor architecture with hardware assisted OS kernel
+S. Stergiou, G. Manis, G. Asimenos, A. Sotiropoulos, G. Papakonstantinou
+Workshop on Application Specific Processors, WASP-1, Instabul, Turkey
+A meta-interface for programming embedded applications
+N. Papaspyrou, S. Stergiou, G. Manis, G. Papakonstantinou
+4th International Workshop on computer Science and Information Technology, CSIT 2002, Patras, Greece
+2001
+
+Using higher order attribute grammars in high-level hardware synthesis
+I. Panagopoulos, G. Economakos, and G. Papakonstantinou
+In 19th International Conference on Applied Informatics, IASTED
+Turning software into hardware with the system class library
+G. Economakos, P. Economakos, I. Papangopoulos, I. Poulakis and . Papakonstantinou
+In Design Automation and test in Europe Conference and Exhibition. ACM/IEEE
+TOPPER: A Tool for Optimizing the Performance of Parallel Applications
+D. Konstantinou, N. Koziris, G. Papakonstantinou
+Proceedings of the Euro PVM-MPI 2001, Santorini, Greece
+TOPPER: A Software Environment for Optimizing the Performance of Parallel Programs
+D. Konstantinou, G. Goumas, P. Theodoropoulos, N. Koziris, G. Papakonstantinou
+Proceedings of the 8th Panhellenic Conference on Informatics, Nicosia/Cyprus
+Software and hardware codesign of a real time ecg monitor
+G. Economakos, A. Sotiropoulos and G. Papakonstantinou
+In 19th International Conference on Applied Informatics, IASTED
+Scheduling UET Grids with Unit Communication Time Delays Into Unlimited/Fixed Number of Processors
+P. Tsanakas, N. Koziris, T. Andronikos and G. Papakonstantinou
+chapter in Book/Volume 5, Advances in High Performance Computing Series: Parallel, Neural, Systolic
+On parallelization of UET/UET-UCT loops
+G. Papakonstantinou, T. Andronikos, I. Drositis
+Neural, Parallel and Scientific Computations, vol. 9, Dec. 2001
+Minimizing Completion Time for Loop Tiling with Computation and Communication Overlapping
+G. Goumas, A.Sotiropoulos and N. Koziris
+Proceedings of the 2001 International Parallel and Distributed Processing Symposium (IPDPS2001), IEEE Press, San Francisco, California, April 2001
+ps file
+pdf file
+Incorporating Homomorphic Reduction into Abstract Interpretation
+Vassilios A. Zoukos, G. Papakonstantinou, and P. Tsanakas
+Proceedings of the 8th Panhellenic Conference on Informatics, Volume 2, pp. 40-45, 8-10 November 2001, Nicosia, Cyprus
+pdf file
+Geometric Scheduling of 2-D Uniform Dependence Loops
+I. Drositis, T. Andronikos, A. Kokorogiannis, G. Papakonstantinou, N. Koziris
+Proceedings of the 8th International Conference on Parallel and Distributed Systems (ICPADS 2001), pp. 259-264, IEEE Press, KyongJu City, Korea, June 2001.
+other file
+Geometric Pattern Prediction and Scheduling of Uniform Dependence Loops
+I. Drositis, T. Andronikos, A. Alexandridi, G. Papakonstantinou, N. Koziris
+Proceedings of the 5th Hellenic European Conference on Computer Mathematics and its Applications
+other file
+Experiments with a c++ synthesis environment
+G. Economakos,P. Economakos,I. Panagopoulos, and G. Papakonstantinou
+In 10th International HDL Conference and Exhibition
+Developing emedded applications for a component-based Operating System
+N. Papaspyrou, I. Panagopoulos, S. Stergiou, G. Papakonstantinou
+Foutrh Multi-conference Information Society: Development and Reengineering of Information Systems, IS'2001
+C++as a hardware specification languge: Design methodologies under a compiler generator environment
+G. Economakos, P. Economakos, I. Panagopoulos, and G. Papakonstantinou
+In Design Expro Conference
+Artemis: A Digital Library environment for the Modern Greek Grey Literature
+P. Theodoropoulos, J. Drossitis, P. Tsanakas, N. Koziris, V. Chrissikopoulos, D. Georgiou, and K. Toraki
+Proceedings of the 3rd Greek Conference on Libraries, Athens March 2001
+An Open Distributed Shared Memory System
+G. Manis, L. Lymberopoulos, N. Koziris and G. Papakonstantinou
+Proceedings of the International Conference on High Performance Computing and Networking (HPCN'01)
+A Web-based intelligent system for personal health assistance
+K. Blekas, D. Fotiadis, A. Likas, and D. Nanou
+EUNITE-Workshop Intelligent Systems in Patient Care, Vienna, Oct. 2001
+A systematic approach to represent and implement hardware transformations with respect to specific i/o protocols
+I. Poulakis, G. Economakos, I. Panagopoulos, G. Papakonstantinou, and N. Koziris
+In 19th International Conference on Applied Informatics, ICPADS-2001
+A significant points driven piecewise linear approximation algorithm for ECG signals
+A. Koulouris, G. Papakonstantinou
+MEDISON 2001
+A Pipelined Schedule for Loop Tiling to Minimize Overall Completion Time
+A.Sotiropoulos and N. Koziris
+Proceedings of the 8th Panhellenic Conference on Informatics, Nicosia/Cyprus
+A Pipelined Execution of Tiled Nested Loops onto a Cluster of PCs using PCI-SCI NICs
+A. Sotiropoulos, G. Tsoukalas, N. Koziris
+Proceedings of SCI-Europe 2001 (4th International Conference on SCI-based Technology and Research), pp. 3-11, ISBN 82-14-00023-8, Dublin, Ireland, October 1st-3rd, 2001.
+A multi-lingual synthesis and verification enviroment
+G. Economakos, S. Stergiou, G. Papakonstantinou
+Euromicro Conf.
+2000
+
+Talos: an interactive Web-enabled educational environment on mobile robot technology
+S. Athanasiou, I. Kouvaras, I. Poulakis, A. Kokorogiannis, P. Tsanakas, N. Koziris
+Proceedings of the 10th Mediterranean Electrotechnical Conference (Melecon '2000), vol I, pp.387-39
+Partial Parsing with Grammatical Features
+A. Manousopoulou, G. Papakonstantinou, P. Tsanakas
+6th International Workshop on Parsing Technologies (IWPT 2000), Trento, Italy
+Optimal Scheduling for UET-UCT Grids Into Fixed Number of Processors
+T. Andronikos, N. Koziris, G. Papakonstantinou and P. Tsanakas
+Proceedings of 8th Euromicro Workshop on Parallel and Distributed Processing (PDP2000), IEEE Press, pp. 237-243, Rhodes, Greece.
+pdf file
+Fuzzy Neural Net.Based Charact. of Diffused Liver Diseases Using Image Texture Tech. on Ultrasonic
+E. Kyriakoy, S. Pavlopoulos, D. Koutsouris, K. Blekas, A. Stafylopatis and P. Zoumpoulis
+IEEE Engineering in Medicine and Biology Magazine,Vol 19, No 1, January/February 2000
+Evaluation of Loop Grouping Methods based on Orthogonal Projection Spaces
+I. Drositis, G. Goumas, N. Koziris, P. Tsanakas and G. Papakonstantinou
+Proceedings of the 2000 International Conference on Parallel Processing ICPP-2000, pp. 469-476, Toronto, Canada, IEEE Press
+other file
+Chain Grouping: A Method for Partitioning Loops onto Mesh-Connected Processor Arrays
+P. Tsanakas, N. Koziris and G. Papakonstantinou
+IEEE Transactions on Parallel and Distributed Systems, vol. 11, no.9, pp. 941-955
+An Efficient Algorithm for the Physical Mapping of Clustered Task Graphs onto Multiprocessor Architectures
+N. Koziris, M. Romesis, P. Tsanakas and G. Papakonstantinou
+Proceedings of 8th Euromicro Workshop on Parallel and Distributed Processing, (PDP2000), IEEE Press, pp. 406-413, Rhodes, Greece
+pdf file
+Advances in attribute grammar driven hardware compilation
+E. Economakos, I. Panagopoulos, G. Papakonstantinou
+International Workshop on Attribute Grammars and their Applications, WAGA 00, Ponte de Lima, Portugal
+A top-down interactive behaviolar synthesis environment
+I. Poulakis, P. Economakos, G. Papakonstantinou
+In 7th International Conference on Electronics, Circuits&Systems IEEE
+A Systolic Approach to Loop Partitioning and Mapping into Fixed Size Distributed Memory Architectures
+I. Drossitis, N. Koziris, nd N. Papaspyrou and P. Tsanakas
+chapter in Advances in Informatics, pp.83-96, ISBN 981-02-4192-5, World Scientific, Singapore
+A grammatical approach to user model resolution for electronic shopping
+A. Manousopoulou, G. Papakonstantinou
+International Workshop on Attribute Grammars and their Applications, WAGA 00, Ponte de Lima, Portugal
+A Distributed Media Server Management Scheme
+S. Sotirchos, N. Koziris, G. Papakonstantinou
+Proceedings of the 10th Mediterranean Electrotechnical Conference (Melecon '2000), vol I, pp.6-10,
+A Decentralized Multichannel Length Transf. Algor. & Its Parallel Impl. for Real Time ECG Monitoring
+A. Koulouris, G. Papakonstantinou, and P. Tsanakas
+Computers and Biomedical Research 33, pp. 227-244
+1999
+
+Scheduling Chained and Multicycle Operations with Language Analysis
+G. Economakos and G. Papakonstantinou
+IEEE/VIUF International Workshop on Behavioral Modeling and Simulation BMAS'99, Orlando, USA
+Refinement and Property Checking in High-Level Synthesis Using Attribute Grammars
+G. Economakos and G. Papakonstantinou
+IFIP WG 10.5 Advanced Research Working Conference on Correct Hardware Design and Verification Method
+Optimal Scheduling for UET/UET-UCT Generalized N-Dimensional Grid Task Graphs
+T. Andronikos, N. Koziris, G. Papakonstantinou, P. Tsanakas
+Journal of Parallel and Distributed Computing, vol. 57, no. 2, pp. 140-165
+pdf file
+Modelling the Control on Parallel Implementations of Declarative Programming Languages
+A. Thanos, C. Voliotis, and G. Papakonstantinou
+International Conference on Computational Intelligence for Modelling,Control & Automation(CIMCA99)
+Language Based Design Verification with Semantic Analysis
+G. Economakos and G. Papakonstantinou
+EUROMICRO'99 Conference, Workshop on Digital System Design DSD'99, Milan, Italy
+Facilitating the Development of Parallel Impl. of Declarative Progr.Lang. Using Attribute Grammars
+A. Thanos and G. Papakonstantinou
+Second International Workshop on Attribute Grammars and Their Applications WAGA'99 Amsterdam
+An Interactive High-Level Synthesis Tool Based on Attribute Grammars
+I. Poulakis, G. Economakos, G. Papakonstantinou and P. Tsanakas
+3rd WSES/IEEE/IMACS World Multiconference on Circuits, Systems, Communications and Computers CSCC'99
+An Attribute Grammar Driven High-Level Synthesis Methodology for VHDL Specifications
+G. Economakos and G. Papakonstantinou
+IEEE International Symposium Signals, Circuits and Systems SCS'99, Iasi, Romania
+An Array Architecture for Syntactic Pattern Recognition
+A. Koulouris, N. Koziris, G. Papakonstantinou and P. Tsanakas
+Concepts Tools and Applications, series on Microprocessor Based and Intelligent Systems Eng. vol. 2 pp. 87-95, Kluwer Academic Publishers, 1999.
+A Systolic Approach to Loop Partitioning and Mapping into Fixed Size Distributed Memory Architectures
+I. Drossitis, N. Koziris, G. Papakonstantinou and P. Tsanakas
+Proceedings of the 7th Panhelenic Conference on Informatics, pp. IV18-IV28
+pdf file
+A knowledge acquisition and management system for ECG diagnosis
+Ph. Bourlas, E. Giakoumakis, G. Papakonstantinou
+ACAI-99 (Advanced Course on Artificial Intelligence), Chania, Greece
+other file
+A Formal Method for Hardware Design Using Attribute Grammars
+G. Economakos and G. Papakonstantinou
+6th IEEE International Conference on Electronics, Circuits and Systems ICECS'99, Paphos, Cyprus
+1998
+
+Using wavelet analysis as preprocessing module for the syntactic pattern recognition of the ECG
+A. Koulouris, G. Papakonstantinou, P. Tsanakas
+BMI-98, 8th International IMECO Conference on Measurement in Clinical Medicine, Dubrovnik,Croatia
+Towards automatic generator of multi-paradigm parallel programming languages using parallel attribute grammmar evaluation techniques
+A.M. Thanos, G. Papakonstantinou, P. Tsanakas
+Second International Conference on Parallel and Distributed Computing and Networks (PDCN'98), Brisbane, Australia
+Mixture Density Estimation Based on Maximum Likelihood and Test Statistics
+N. A. Vlassis, G. Papakonstantinou, P. Tsanakas
+Neural Processing Letters Journal
+Incorporating Multi-pass Attribute Grammars for the High-Level Synthesis of ASICs
+G. Economakos, G. Papakonstantinou, P. Tsanakas
+ACM Symposium on Applied Computing SAC'98, Atlanta, USA.
+Extensive Laboratory Practice with the ECG Signal
+Ph. Bourlas, G. Economakos, A. Koulouris, G. Papakonstantinou, A. Thanos, P. Tsanakas
+1st Panhellenic Conference on Biomedical Technology, Athens, Greece
+Extensive Laboratory Practice with ECG signal
+Ph. Bourlas, G. Economakos, A. Koulouris, G. Papakonstantinou, A. Thanos, P. Tsanakas
+1st Hellenic Conference on Biomedical Technology, 20-21 March Athens, Greece
+Exploiting the Use of VHDL Specifications in the AGENDA High-Level Synthesis Environment
+G. Economakos, G. Papakonstantinou
+EUROMICRO'98 Conference, Workshop on Digital System Design DSD'98, Vasteras, Sweden
+Dynamic Sensory Probabilistic Maps for Mobile Robot Localization
+N. A. Vlassis, G. Papakonstantinou, P. Tsanakas
+Proc. IROS'98, IEEE/RSJ Int. Conf. on Intelligent Robots and Systems, Victoria, B.C., Canada, Oct
+Behavioral Synthesis of Digital Filters Using Attribute Grammars
+G. Economakos, G. Papakonstantinou, P. Tsanakas
+IX European Signal Processing Conference EUSIPCO'98, Rhodes, Greece
+Automatic Generation of a VLSI Parallel Architecture for QRS Detection
+A. Koulouris, N. Koziris, G. Papakonstantinou and P. Tsanakas
+Proceedings of the IX European Signal Processing Conference (EUSIPCO-98), Rhodes, Sept
+Attribute Grammar Modelling for Generating CCLP Languages
+A. Thanos and G. Papakonstantinou
+to appear in Workshop on Modeling and Computing with Concurrent Constraint Programming of the 4th Int. Conf. on Principles and Practice of Constraint Programming (CP98), October 30, Pisa, Italy
+Attribute Grammar Based System for Multi-Paradigm distributed computing: The Concurrent Constraint Logic Programming Paradigm,
+A. Thanos, G. Papakonstantinou, P. Tsanakas
+10th EXPERSYS-98 Int. Conf. on Artificial Intelligence Applications, November 16-17 Virginia, USA
+Animation Techniques for Real Time ECG Monitoring
+G. Economakos, L. Nikolaidis, G. Papakonstantinou
+Computers in Cardiology Conference CIC'98, Cleveland, USA
+An Open System for ECG Telemedicine and Telecare
+A. Thanos, G. Economakos, P. Tsanakas, G. Papakonstantinou
+Computers in Cardiology Conference CIC'98, Cleveland, USA
+An Attribute Grammar Driven High-Level Synthesis Paradigm for Control Applications
+G. Economakos, G. Papakonstantinou
+3rd European Robotics, Intelligent Systems Control Conference EURISCON'98, Athens, Greece
+An array architecture for syntactic pattern recognition
+A, Koulouris, N. Koziris, G. Papakonstantinou, P. Tsanakas
+IMACS 98, Athens, Greece
+AGENDA: An Attribute Grammar Driven Environment for the Design Automation of Digital Systems
+G. Economakos, G. Papakonstantinou, P. Tsanakas
+Design Automation and Test in Europe Conference and Exibition DATE'98, Paris, France.
+A Vector Quantization Schema for Non-Stationary Signal Distributions Based on ML Estimation of Mixture Densities
+N. A. Vlassis, K. Blekas, A. Stafylopatis, G. Papakonstantinou
+Proc. EUSIPCO'98, IX European Signal Processing Conference, Island of Rhodes, Greece, Sep 1998
+A unified model for multimedia retrieval by content
+P. Piamsa-nga, N. Alexandridis, G. Blankenship, G. Papakonstantinou, P. Tsanakas, S. Tzafestas
+13th International Conference on Computers and Their Applications, CATA 98,Honolulu,Hawaii
+A sensory uncertainty field model for unknown and non-stationary mobile robot environments
+N. A. Vlassis, N. Sgouros, G. Efthivoulidis, G. Papakonstantinou, P. Tsanakas
+Proc. ICRA'98, IEEE Int. Conf. on Robotics Automation, Leuven, Belgium, May
+A Path-Driven Loop Scheduling Mapped onto Generalized Hypercubes
+Hai Jiang, A.T. Chronopoulos, G. Papakonstantinou, P.Tsanakas
+IASTED Conference on Parallel Distributed Processing, U.S.A., Las Vegas
+A Parallel Parsing VLSI Architecture for Arbitrary Context Free Grammars
+A. Koulouris, N. Koziris, T. Andronikos, G. Papakonstantinou and P. Tsanakas
+Proceedings of the IEEE International Conference on Parallel and Distributed Systems (ICPADS98), IEEE Press, Taiwan, ROC, Dec 1998
+pdf file
+A Grammatical Approach to the Exploitment of Speculative Execution of Behavioral Models
+G. Economakos, P. Tsanakas
+IEEE/VIUF International Workshop on Behavioral Modeling and Simulation BMAS'98, Orlando, USA
+A Digital Library model for the Grey Literature of Hellenic Academic Institutes
+V. Chrissikopoulos, D. Georgiou, N. Koziris, K. Toraki, P. Tsanakas
+Proceedings of the Second European Conference on Research and Advanced Technology for Digital Libraries (ECDL98), Crete
+A chart-like parser for context sensitive grammars
+A. Manousopoulou, G. Papakonstantinou and P. Tsanakas
+International Workshop on Tabulation in Parsing and Deduction (TAPD 98), Paris, France
+1997
+
+Παράλληλη συντακτική ανάλυση της Ελληνικής γλώσσας
+Α. Μανουσοπούλου, Γ. Μανής, Π. Τσανάκας, Γ. Παπακωνσταντίνου
+6ο Πανελλήνιο Συνέδριο Πληροφορικής, Αθήνα
+Καθολικοί σηματοφορείς σε παράλληλο προγραμματιστικό περιβάλλον
+Π. Θεοδωρόπουλος, Γ. Παπακωνσταντίνου, Π. Τσανάκας
+6ο Πανελλήνιο Συνέδριο Πληροφορικής, Αθήνα
+Εντοπισμός και σημειώσεις ονοματικών συνόλων σε κείμενα της νέας Ελληνική
+Α. Μανουσοπούλου, Γ. Παπακωνσταντίνου, Π. Τσανάκας
+6ο Πανελλήνιο Συνέδριο Πληροφορικής, Αθήνα
+The probabilistic growing cell structures algorithm
+N. A. Vlassis, A. Dimopoulos, G. Papakonstantinou
+Proc. ICANN'97, 7th Int. Conf. on Artificial Neural Networks, Lausanne, Switzerland, Oct, p. 649-654
+SENARIO: A sensor-aided intelligent navigation system for powered wheelchairs
+N Katevas, N. M. Sgouros, S. Tzafestas, G. Papakonstantinou, P. Beattie, J. M. Bishop, P. Tsanakas and D. Koutsouris
+IEEE Robotics and Automation Magazine, vol. 4, no.4,pp 60-70, Dec
+Robot Map Building by Kohonen's Self-Organizing Neural Networks
+N. A. Vlassis, G. Papakonstantinou, P. Tsanakas
+Proc. 1st Mobinet Symposium, Athens, Greece, May, p. 187-194
+ORCHID: A portable platform for parallel programming
+K. Voliotis, G Manis, H. Lekatsas, P. Tsanakas, G. Papakonstantinou
+Euromicro Journal of Systems Architecture,vol. 43, issue 6-7, pp 459-478, April
+Optimal scheduling for UET-UCT generalized n-dimensional grid task graphs
+T. Andronikos, N. Koziris, G. Papakonstantinou and P. Tsanakas
+11th IEEE/ACM International Parallel Processing Symposium (IPPS 97),Geneva
+Optimal piecewise linear approximation
+G. Manis, G. Papakonstantinou, P. Tsanakas
+13th International Conference on Digital Signal Processing, DSP-97, Santorini, Greece
+Optimal Automatic Hardware SynthesisFor Signal Processing Algorithms
+N. Koziris, G. Economakos, T. Andronikos, G. Papakonstantinou and P. Tsanakas,
+Proceedings of 13th IEEE International Conference on Digital Signal Processing (DSP97), pp. 1011-1014, IEEE Press, Santorini, Greece
+NTUA Extended Telemedicine Platform: The ECG Paradigm
+G. Economakos, A. Koulouris, G. Papakonstantinou, A. Thanos and P. Tsanakas
+International Conference on Telemedicine and Telecare TeleMed'96, London. Also in Journal of Telemedicine and Telecare, vol. 3, supp. 1
+Multimedia presentation techniques for interactive plots
+N. Sgouros, P. Tsanakas and G. Papakonstantinou
+IEEE Innternational Conference on Multimedia Computing Systems (ICMCS 97), Ottawa
+Multimedia presentation techniques for interactive plots
+N. M. Sgouros, P. Tsanakas, G. Papakonstantinou
+International Conference on Multimedia Computing and Systems 97, Ottawa, Canada
+Mapping Nested Loops onto Distributed Memory Multiprocessors
+N. Koziris, G. Papakonstantinou and P. Tsanakas
+Proceedings of the IEEE International Conference on Parallel and Distributed Systems (ICPADS97), IEEE Press, pp. 35-41, Seoul, Korea, Dec
+Lower Time and Processor Bounds for Efficient Mapping of Uniform Dependence Algorithms into Systolic Arrays
+T. Andronikos, N. Koziris, Z. Tsiatsoulis, G. Papakonstantinou, P. Tsanakas
+Journal of Parallel Algorithms and Applications, vol. 10, no. 3-4, pp. 177-193
+LoopDep: An Integrated Environment for Nested Loop Parallelization using PVM
+A. Pappas, N. Koziris, T. Andronikos, G. Papakonstantinou and P. Tsanakas
+Proceedings of the 6th Panhelenic Conference on Informatics
+Learning the Voronoi centers of a mobile robot's configuration space
+N. A. Vlassis, G. Papakonstantinou, P. Tsanakas
+Proc. 3rd ECPD Int. Conf. on Advanced Robots, Intel. Automation and Active Systems, Bremen, Germany, Sep , p. 339-343
+Integrating Different VHDL Coding Styles in an Attribute Grammar Driven High-Level Synthesis Environment
+G. Economakos, P. Economakos, G. Papakonstantinou and P. Tsanakas
+IFIP International Workshop on Logic and Architecture Synthesis IWLAS'97, Grenoble, France
+Hardware Compilation Using Attribute Grammars
+G. Economakos, G. Papakonstantinou, K. Pekmestzi and P. Tsanakas
+IFIP WG 10.5 Advanced Research Working Conference on Correct Hardware Design and Verification Methods CHARME'97, Montreal, Canada
+Global semaphores in a parallel programming environment
+P. Theodoropoulos, P. Tsanakas, P. Papakonstantinou
+EuroPVM-MPI97, Krakow, Poland
+Global Scheduling in an Attribute Grammar Driven Silicon Compilation Environment
+G. Economakos, G. Papakonstantinou and P. Tsanakas
+IEEE/VIUF International Workshop on Behavioral Modeling and Simulation BMAS'97, Arlington, USA
+Free Scheduling of General Nested Loops for Distributed Memory Architectures
+N. Koziris, G. Papakonstantinou and P. Tsanakas
+Proceedings of 4th IEEE International Conference on Electronics, Circuits and Systems (ICECS97), IEEE Press, Cairo, Egypt
+Dynamic Dramatization of Multimedia Story Presentations
+N. M. Sgouros, G. Papakonstantinou, P. Tsanakas
+ACM International Conference on Intelligent User Interfaces (IUI-97), Orlando, FL, USA
+Automatic Hardware Synthesis of Nested Loops Using UET Grids and VHDL
+N. Koziris, T. Andronikos, G. Economakos, G. Papakonstantinou and P. Tsanakas
+Proceedings of the International Conference on High Performance Computing and Networking (HPCN97), Lecture Notes in Computer Science, Springer-Verlag, pp. 888-897, Vienna, Austria
+Automatic generation of portable parallel natural language parsers
+A. Manousopoulou, G. Manis, P. Tsanakas, G. Papakonstantinou
+International Conference on Tools with AI, ICTAI 97, Newport Beach, USA
+1996
+
+Using PVM to implement PPARDB/PVM, a portable parallel database management system
+N. Papakostas, G. Papakonstantinou, P. Tsanakas
+EUROPVM'96 Conference, Germany
+Towards a knowledge acquisition and management system for ECG diagnosis
+Ph. Bourlas, N. Sgouros, G. Papakonstantinou, P. Tsanakas
+Proceedings of MIE 96 (Medical Informatics Europe, 13th International Congress), Copenhagen, Denmark August
+The CARDIO-LOGOS system for ECG training and diagnosis
+Ph. Bourlas, E. Giakoumakis, D. Koutsouris, G. Papakonstantinou, P. Tsanakas
+Technology and Health Care 3 () 279-285, Elsevier Science B.V.
+Qualitative Autonomous Navigation for Wheelchair Robots
+N. M. Sgouros, P. Tsanakas, G. Papakonstantinou, N. Katevas
+Proceedings of the European Conference on Artificial Intelligence (ECAI-96), Budapest, Hungary, J. Wiley Sons, pp. 679-683.
+PPARDB/PVM: A portable PVM based parallel database management system
+N. Papakostas, G. Papakonstantinou, P. Tsanakas
+3rd International Conference of the ACPC, Austria
+ORCHID: A portable platform for parallel programming
+K. Voliotis, G Manis, H. Lekatsas, P. Tsanakas, G. Papakonstantinou
+Euromicro Journal of Systems Architecture
+Optimal Time and Efficient Space Free Scheduling For Nested Loops
+N. Koziris, G. Papakonstantinou, P. Tsanakas
+The Computer Journal, vol 39, no 5, pp. 439-448
+Localized Qualitative Navigation for Indoor Environments
+N. M. Sgouros, G. Papakonstantinou, P. Tsanakas
+Proceedings of the IEEE International Conference on Robotics and Automation (ICRA-96), Minneapolis, MN, USA IEEE Press, pp. 921-926.
+Localized qualitative navigation for indoor enviroment
+N. Sgouros, G. Papakonstantinou, P. Tsanakas
+IEEE Conference on Robotics & Automation, 1996
+Global path planning for autonomous qualitative navigation
+N. A. Vlassis, N. M. Sgouros, G. Efthivoulidis, G. Papakonstantinou, P. Tsanakas
+Proc. 8th IEEE Int. Conf. on Tools with Artificial Intelligence, Toulouse, France, Nov , p. 354-359.
+Extending synchronization PVM mechanisms
+P. Theodoropoulos, G. Manis, P. Tsanakas, G. Papakonstantinou
+EUROPVM'96 Conference, Germany
+Enhancing PVM with threads in distributed programming
+G. Manis, C Voliotis, P. Tsanakas, G. Papakonstantinou
+HPCN Europe , Brussels
+ECG Handling on a Telemedicine Platform
+G. Economakos, A. Koulouris, G. Papakonstantinou, A. Thanosand P. Tsanakas
+International Conference on Telemedicine and Telecare, TelMed95 Conference, Nov. 95, London, also published in Journal of Telemedicine and Telecare, vol. 2, supp. 1
+Automatic parallelization of full 2-D block matching for real time motion compensation and mapping into special purpose architectures
+N.Koziris, G. Papakonstantinou, P. Tsanakas
+3rd International Workshop on Image and Signal Processing, England
+Attribute grammar based modeling of concurrent constraint logic programming
+C. Voliotis, N. Sgouros, G. Papakonstantinou
+International Journal on Artificial Intelligence Tools, vol.4, no. 3, pp 383-411
+An explorative concatenative approach for learning morphological phenomena of modern Greek
+Y. Kotsanis, D. Kokkinos, A. Manousopoulou, G. Papakonstantinou
+Association for Learning Technology Journal (ALT-J),vol.4, no.3, pp 29-40
+An Experiment for Truly Parallel Logic Programming
+G. Efthivoulidis, N. A. Vlassis, P. Tsanakas, G. Papakonstantinou
+Journal of Intelligent and Robotic Systems, vol. 16, p. 169-184
+A Parallel Approach to ECG Processing
+A. Koulouris, G. Papakonstantinou, P. Tsanakas
+IEEE EMBs 18th Ann. Conference Amsterdam
+A Grammatical Approach to Parallel Logic Programming for Expressing Software Evolution Reasoning
+A. Thanos
+3rd CAiSE 96 Doctoral Consortium, 20-21 May, Heraklion, Greece
+A Framework for Plot Control in Interactive Story Systems
+N. M. Sgouros, P. Tsanakas, G. Papakonstantinou
+Proceedings of the 13th National Conference on Artificial Intelligence (AAAI-96), Portland, OR, USA, , AAAI/MIT Press, pp. 162-167
+1995
+
+The design of a portable software platform and its application in parallel signal processing
+G. Manis, P. Tsanakas, G. Papakonstantinou
+Int. Conf. on Digital Signal Processing, Cyprus
+SENARIO-The Autonomous Mobile Robotics Technology for the Locomotion Handicap: Operational and Technical Issues
+N. Katevas, S. Tzafestas, J. M. Bishop, R. Preuss, P. Rabischong, D. Koutsouris, A. Ikonomopoulos, G. Papakonstantinou, P. Tsanakas, N. Uzunoglou
+The European Context for Assistive Technology, I. Placencia Porrero, R. Puig de la Bellacasa (editors), April , Paris, France, IOS press, pp. 371-374
+ORCHID: The design of a parallel and portable software platform for local area netware
+G. Manis, K. Voliotis, Ch. Lekatsas, P. Tsanakas, G. Papakonstantinou
+IEEE International Conference on Algorithms and Architectures for Parallel Processing (ICA3PP-95), Brisbane, Australia
+Facilitating the Development of Portable Parallel Application on Distributed Memory Systems
+C. Voliotis, G. Manis, A. Thanos, G. Papakonstantinou and P. Tsanakas
+Massively Parallel Programming Models MPPM-95 Conference, October, Berlin, IEEE Computer Society Press
+Environment representation and off-line planning for real-time autonomous wheel-chair navigation
+N. Sgouros, C. Voliotis, N. Katevas, P. Tsanakas, G. Papakonstantinou
+First ECPD International Conference on Advanced Robotics and Intelligent Automation Athens, Greece
+Development of distributed problem solving systems for dynamic environments
+G. Lekkas, N. Avouris and G. Papakonstantinou
+IEEE Trans. on SMC, vol. 25, no. 3, pp.400-414, March
+Daffodil: A Framework for Integrating AND/OR Parallelism
+C. Voliotis, A. Thanos, N. Sgouros, and G. Papakonstantinou
+5th Hellenic Conference on Informatics, , Athens, Greece
+Automatic Loop Mapping and Partitioning into Systolic Architectures
+N. Koziris, G. Papakonstantinou, P. Tsanakas
+Proceedings of the 5th Panhelenic Conference on Informatics, pp. 777-790, Dec. , Athens
+An Efficient Algorithm for the Optimal Linear Schedule of Uniform Dependence Algorithms
+T. Andronikos, N. Koziris, Z. Tsiatsoulis, G. Papakonstantinou, P. Tsanakas
+Proceedings of the First ECPD International Conference on Advanced Robotics and Intelligent Automation, pp 140-145, Athens
+An Attribute Grammar Approach to the High-Level Automated Hardware Synthesis
+G. Economakos, G. Papakonstantinou and P. Tsanakas
+Information and Software Technology, vol. 37, no. 9
+A portable platform for parallel databases
+F. Stamatelopoulos, G. Manis, G. Papakonstantinou
+HPCN Europe Conference, Milan, Italy
+1994
+
+Σχεδίαση και Ανάπτυξη Εκπαιδευτικού Λογισμικού για τη διδασκαλία της Πληροφορική
+Π .Τσανάκας και Γ.Παπακωσταντίνου
+2ο Συνέδριο Εκπαιδευτικής Πληροφορικής, Αθήνα
+Ανάπτυξη του εκπαιδευτικού προγράμματος ΩΡΙΩΝ
+Π. Τσανάκας και Γ. Παπακωσταντίνου
+ημερίδα ΥΠΕΠΘ: Η Πληροφορική στη Μέση Εκπαίδευση, Μάρτιος
+Parallel syntactic pattern recognition
+G. Papakonstantinou P. Tsanakas, J. Plevrakis
+SPRANN 94 Conference, France
+Parallel natural language interfaces
+G. Papakonstantinou P. Tsanakas and Plevrakis
+EURISCON `94 Conference, Spain,
+Parallel approaches to piecewise linear approximation
+G. Papakonstantinou, P. Tsanakas, G. Manis
+Signal Processing, vol.37, no 3
+Dependency-directed binding of variables for constraint logic programming
+G. Papakonstantinou, C. Voliotis, N. Sgouros
+DEXA '94 Conference, Greece
+Caching inferences and recovering from inconsistencies in logic programming environments
+N. Sgouros, G. Papakonstantinou, P. Tsanakas
+EURISCON `94 Conference, Spain
+ALLS: An AI-based Tool for the Automated Synthesis of Digital Circuits
+G. Economakos, G. Papakonstantinou and P. Tsanakas
+EURISCON'94 Conference, Malaga, Spain
+1993
+
+Παράλληλα Σχεσιακά Συστήματα Διαχείρισης Βάσεων Δεδομένων
+Θ. Θεοχάρης, Γ.Παπακωσταντίνου και Π.Τσανάκα
+Ειδικά Θέματα Βάσεων Δεδομένων ΕΠΥ, Αθήνα
+ORCHID: Πλατφόρμα εκτέλεσης παράλληλων αλγορίθμων σε αρχιτεκτονικές κατανεμημένης μνήμη
+Κ. Βολιώτης, Γ. Παπακωσταντίνου και Π. Τσανάκα
+4ο Πανελλήνιο Συνέδριο Πληροφορικής, Πάτρα
+NTUA/KESS: An Expert System Shell with Inexact Reasoning and Full Theorem Proving Capabilities
+C. Nomikos, N. Vlassis, K. Flokos, T. Panayiotopoulos, G. Papakonstantinou
+4th Panhellenic Conference on Informatics, Patra, Greece
+Distributed shared memory tools: principles and implementation
+G. Papakonstaninou, P. Tsanakas
+Advanced Workshop on Software for Parallel Computation, J. Kowalik and L. Grandinetti (Eds), Springer-Verlag
+ALLS: A CAD Tool for the Design of Digital Circuits
+G. Economakos, G. Papakonstantinou and P. Tsanakas
+4th Panhellenic Conference on Informatics, Patra, Greece
+A full theorem prover under uncertainty
+T. Panayiotopoulos, G. Papakonstantinou
+Journal of Intelligence and Robotic Systems, 7, 139-149
+1992
+
+The design of PARDB: a parallel relational database management system
+T. Theoharis, G. Papakonstantinou, P. Tsanakas
+7th Int. Symp. on Comp. and Information Sciences, Turkey
+Systematic synthesis of parallel VLSI architectures from FP specifications and its application to scene matching
+P. Tsanakas, G. Papakonstantinou, N. Bilalis
+Microprocessing and Microprogramming Journal, vol.35, pp.579-586
+Distributed shared memory implementation for multitransputer systems
+P. Tsanakas, G. Papakonstantinou, G. Efthivoulidis
+Information and Software Technology, vol.34, no 8, pp.499-506
+An extension of the certainty factor model in first order predicate calculus
+T. Panayiotopoulos, G. Papakonstantinou
+The Computer Journal, Vol. 35, No. 2
+AGP: A parallel processor for knowledge and software engineering
+G. Papakonstantinou, T. Panayiotopoulos, G. Dimitriou
+The Computer Journal, Vol. 35, No. 2
+AGP: a parallel processor for knowledge and software engineering
+G. Papakonstantinou, P. Tsanakas, C. Voliotis
+The European Workshop on Parallel Computing / PCA Closing Session, Spain
+A Distibuted shared memory implementation for multitransputer systems
+P. Tsanakas, G. Papakonstantinou, G. Efthivoulidis
+The European Workshop on Parallel Computing / PCA Closing Session, Spain
+1991
+
+The transputer implementation of a parallel attribute grammar evaluator
+G. Papakonstantinou, P. Tsanakas, A. Stafylopatis, S. Kollias
+ESPRIT/Parallel Computing Action, Workshop III, Bonn
+The multitransputer implementation of a hierarchical edge detection algorithm
+G. Dimitriu, P. Tsanakas, G.Papakonstantinou
+P.D.COM 91, Greece
+The GIBS interface for ECG diagnosis
+E. Giakoumakis, G. Papakonstantinou
+Computers in Cardiology Conference, Italy
+The automated synthesis of parallel dedicated architectures using prolog specifications
+P. Tsanakas, G. Papakonstantinou, K. Pekmestzi, S. Kaxiras
+P.D.COM 91, Greece
+Predicate logic and inexact reasonic
+T. Panayiotopoulos, G. Papakonstantinou
+EURISCON 91, Greece
+An FP-based methodology for the automatic VLSI implementation of a parsing algorithm
+G. Papakonstantinou, P. Tsanakas, K. Voliotis
+International Conference on Concurrent Engineering and Electronic Design Automation, England
+A truly declarative prolog-like language
+G. Papakonstantinou, T. Panayiotopoulos, M. Sideri
+EURISCON 91, Greece
+A prolog-based design environment for the high-level synthesis of application-specific architectures
+P. Tsanakas, G. Papakonstantinou, S. Kaxiras
+Microprocessing and Microprogramming, 32, pp.307-314
+A parallel full theorem prover with uncertainties
+G. Papakonstantinou, T. Panayiotopoulos, N. Georgoulis, I. Papakonstantinou
+P.D.COM 91, Greece
+A consulting system for ECG diagnosis
+E. Giakoumakis, G. Papakonstantinou
+EURISCON 91, Greece
+1990
+
+Knoweledge processing and learning systems on multitransputer architectures
+G. Papakonstantinou, A. Stafylopatis, S. Kollias, P. Tsanakas
+ESPRIT/Parallel Computing Action, Workshop I, Southampton
+Knoweledge processing and learning systems on multitransputer architectures
+S. Kollias, A. Stafylopatis, G. Papakonstantinou and P. Tsanakas
+ESPRIT/Parallel Computing Action, Workshop II, ISPRA
+An attribute grammar interpreter for inexact reasoning
+T. Panayiotopoulos, G. Papakonstantinou, N.Sgouros
+Information and Software Technology, vol.32, no.5, pp 347-356

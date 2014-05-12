@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1 September 2005), see www.w3.org" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+  <meta name="generator" content=
+  "Docutils 0.4.1: http://docutils.sourceforge.net/" />
+
+  <title>ΑΡΙΘΜΗΤΙΚΗ ΕΠΙΛΥΣΗ ΜΕΡΙΚΩΝ ΔΙΑΦΟΡΙΚΩΝ ΕΞΙΣΩΣΕΩΝ ΣΕ
+  ΑΡΧΙΤΕΚΤΟΝΙΚΕΣ ΚΑΤΑΝΕΜΗΜΕΝΗΣ ΜΝΗΜΗΣ</title>
+<style type="text/css">
+/*<![CDATA[*/
+
+body {
+        font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+        background-color: #ffffff; 
+        color: black;
+}
+
+p {
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
+h1 {
+        text-align: center;
+}
+
+img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px dotted black;
+        padding: 2px;
+}
+
+table {
+        border-collapse: collapse;
+        border: 2px solid black;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+
+td, th {
+        border: 1px dotted #b0b0b0;
+        padding: .5em;
+        text-align: left;
+}
+
+tr:hover {
+        background: #f0f0f0;
+}
+
+.section h1 {
+        font-size: 14px;
+        margin-right: 10px;
+        text-align: left;
+}
+
+a:link, a:visited {
+        color: #105ebd;
+        text-decoration: none;
+        border-bottom: 1px dashed  #105ebd;
+}
+
+a:hover, a:active {
+        color:#4a5d74;
+}
+
+ul {
+}
+
+li {
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+}
+
+
+blockquote li {
+        padding-top: 1px;
+}
+
+.links p {
+        margin: 0;
+        padding: 0;
+}
+
+p.caption {
+        text-align: center;
+        padding-bottom: 4px;
+        font-style: italic;
+}
+
+/*]]>*/
+</style>
+</head>
+
+<body>
+  <div class="document" id="id1">
+    <h1 class="title">ΑΡΙΘΜΗΤΙΚΗ ΕΠΙΛΥΣΗ ΜΕΡΙΚΩΝ ΔΙΑΦΟΡΙΚΩΝ
+    ΕΞΙΣΩΣΕΩΝ ΣΕ ΑΡΧΙΤΕΚΤΟΝΙΚΕΣ ΚΑΤΑΝΕΜΗΜΕΝΗΣ ΜΝΗΜΗΣ</h1>
+
+    <table class="docinfo" frame="void" rules="none">
+      <col class="docinfo-name" />
+      <col class="docinfo-content" />
+
+      <tbody valign="top">
+        <tr class="field">
+          <th class="docinfo-name">Καθηγητής:</th>
+
+          <td class="field-body">Νεκτάριος Κοζύρης ( <a class=
+          "reference" href=
+          "mailto:nkoziris@cslab.ece.ntua.gr">nkoziris@cslab.ece.ntua.gr</a>
+          )</td>
+        </tr>
+
+        <tr class="field">
+          <th class="docinfo-name">Επικοινωνία:</th>
+
+          <td class="field-body">Γιώργος Γκούμας ( <a class=
+          "reference" href=
+          "mailto:goumas@cslab.ece.ntua.gr">goumas@cslab.ece.ntua.gr</a>
+          )</td>
+        </tr>
+
+        <tr class="field">
+          <th class="docinfo-name">Άτομα:</th>
+
+          <td class="field-body">1</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section">
+      <h1><a id="id2" name="id2">Γενικά</a></h1>
+
+      <p>Οι Μερικές Διαφορικές Εξισώσεις (ΜΔΕ) αποτελούν έναν
+      ιδιαίτερα σημαντικό τρόπο περιγραφής φαινομένων του φυσικού
+      κόσμου (π.χ. μετάδοση μηχανικών ή Η/Μ κυμάτων, διάχυση
+      θερμότητας κλπ). Καθώς η αναλυτική επίλυση των εξισώσεων
+      αυτών είναι εφικτή για περιορισμένο αριθμό από τις πρακτικά
+      ενδιαφέρουσες περιπτώσεις, οι επιστήμονες καταφεύγουν σε
+      μεθόδους αριθμητικής ανάλυσης και συνακόλουθα στη χρήση
+      υπολογιστών για την επίλυση προβλημάτων με ΜΔΕ. Οι
+      αριθμητικές μέθοδοι επίλυσης τελικά καταλήγουν σε έναν
+      υπολογιστικό αλγόριθμο που, ανάλογα με το μέγεθος του προς
+      επίλυση φυσικού προβλήματος, μπορεί να είναι εξαιρετικά
+      απαιτητικός σε υπολογιστική ισχύ και χώρο μνήμης. Για το λόγο
+      αυτό μέθοδοι και τεχνικές αποδοτικής εκτέλεσης αλγορίθμων που
+      προέρχονται από ΜΔΕ σε υπερυπολογιστικά περιβάλλοντα,
+      αποτελούν αυτή τη στιγμή ένα ιδιαίτερα ζωντανό ερευνητικό
+      πεδίο στο χώρο των συστημάτων υψηλών επιδόσεων.</p>
+
+      <p>Η αριθμητική επίλυση μίας ΜΔΕ απαιτεί κατ’ αρχήν τη
+      «διακριτοποίηση» του προβλήματος, τη μετατροπή του δηλαδή από
+      το συνεχή φυσικό κόσμο στο διακριτό κόσμο του υπολογιστή και
+      των ψηφιακών συστημάτων. Η μέθοδος των πεπερασμένων διαφορών
+      (finite differences) είναι μία από τις επικρατέστερες για το
+      σκοπό αυτό. Ακολουθώντας τη μέθοδο αυτή υπάρχουν δύο βασικές
+      δυνατότητες για τη διακριτοποίηση των προβλημάτων: η χρήση
+      της λεγόμενης ρητής (explicit) διακριτοποίησης που οδηγεί σε
+      πολύ απλούς αλγορίθμους επίλυσης που έχουν όμως σοβαρούς
+      περιορισμούς ως προς τη σύγκλισή τους, και η χρήση της
+      λεγόμενης πεπλεγμένης (implicit) διακριτοποίησης που
+      συγκλίνει χωρίς περιορισμούς, οδηγεί όμως στη δημιουργία ενός
+      μεγάλου, αραιού (sparse) γραμμικού συστήματος.</p>
+    </div>
+
+    <div class="section">
+      <h1><a id="id3" name="id3">Ζητούμενο</a></h1>
+
+      <p>Στο πλαίσιο της προτεινόμενης διπλωματικής εργασίας θα
+      πραγματοποιηθεί παράλληλη υλοποίηση σε προγραμματιστικό
+      μοντέλο ανταλλαγής μηνυμάτων (message-passing) με τη χρήση
+      της βιβλιοθήκης MPI, προβλημάτων ΜΔΕ που έχουν
+      διακριτοποιηθεί ρητά ή πεπλεγμένα. Θα γίνει σύγκριση του
+      παράλληλου χρόνου εκτέλεσης για τις δύο περιπτώσεις και
+      αξιολόγηση της επίδοσής τους σε περιβάλλον κατανεμημένης
+      μνήμης (π.χ. PC Cluster). Καθώς η συγκεκριμένη σύγκριση
+      παρουσιάζει ιδιαίτερο ερευνητικό ενδιαφέρον, η προτεινόμενη
+      εργασία αναμένεται να οδηγήσει στη συγγραφή και δημοσίευση
+      επιστημονικού άρθρου σε διεθνές συνέδριο.</p>
+    </div>
+
+    <div class="section">
+      <h1><a id="id4" name="id4">Στάδια υλοποίησης</a></h1>
+
+      <ol class="arabic simple">
+        <li>Μελέτη βιβλιογραφίας για την αριθμητική επίλυση των
+        ΜΔΕ</li>
+
+        <li>Εξοικείωση με τον παράλληλο προγραμματισμό και τη
+        βιβλιοθήκη MPI</li>
+
+        <li>Εξοικείωση με τη βιβλιοθήκη παράλληλου επιστημονικού
+        προγραμματισμού PETSC</li>
+
+        <li>Υλοποίηση εφαρμογών</li>
+
+        <li>Πειραματικές μετρήσεις</li>
+
+        <li>Συγγραφή εργασίας</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h1><a id="id5" name="id5">Προαπαιτούμενες Γνώσεις</a></h1>
+
+      <p>Προγραμματισμός σε γλώσσα C</p>
+    </div>
+
+    <div class="section">
+      <h1><a id="id6" name="id6">Βιβλιογραφία και
+      σύνδεσμοι</a></h1>
+
+      <ul>
+        <li>
+          <p class="first">Numerical Solution of Partial
+          Differential Equations, K.W. Morton &amp; D.F. Mayers,
+          Cambridge Press</p>
+        </li>
+
+        <li>
+          <p class="first">Computational Methods for PDE in
+          Mechanics, Berardino D’ Acunto, World Scientific</p>
+        </li>
+
+        <li>
+          <p class="first">Numerical Solution of Partial
+          Differential Equations on Parallel Computers, Lecture
+          Notes in Computational Science and Engineering, A.M.
+          Bruaset &amp; A. Tveito (Eds.)</p>
+        </li>
+
+        <li>
+          <p class="first">Message Passing Interface (MPI)
+          Forum:</p>
+
+          <p><a class="reference" href=
+          "http://www.mpi-forum.org/">http://www.mpi-forum.org/</a></p>
+        </li>
+
+        <li>
+          <p class="first">Portable, Extensible Toolkit for|
+          Scientific Computation (PETSc):</p>
+
+          <p><a class="reference" href=
+          "http://www-unix.mcs.anl.gov/petsc/petsc-as/">http://www-unix.mcs.anl.gov/petsc/petsc-as/</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

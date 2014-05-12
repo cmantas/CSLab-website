@@ -1,0 +1,176 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 2.0">
+<title>DSCLab Theses for PCS2</title>
+<style type="text/css"><!--.space  {line-height: 2pt}
+.headline       {font-family: Courier New;
+                 font-size: 12pt;
+                 font-weight: bold;
+                 line-height: 100%;
+                }
+.headline2      {font-family: Courier New;
+                 font-size: 11pt;
+                 font-weight: bold;
+                 line-height: 100%;
+                }
+.text		{font-family: Times New Roman;
+			font-size: 9pt;
+			font-weight: medium;
+			line-height: 10pt;
+			color: black}
+			
+.jointext	{font-family: Times New Roman;
+			font-size: 12pt;
+			font-weight: bold;
+			line-height: 100%;
+		}
+.menuhead       {font-family: Times New Roman;
+                 font-size: 11pt;
+                 font-weight: bold;
+                 line-height: 100%;
+                 color: black;
+                }
+.menutext       {font-family: Times New Roman;
+                 font-size: 9pt;
+                 font-weight: medium;
+                 line-height: 15pt;
+                 color: black;
+                }
+.menutext2      {font-family: Times New Roman;
+                 font-size: 8pt;
+                 font-weight: medium; line-height: 15pt;
+                 color: black;
+                }
+A:visited       {color: #006342}
+A:active        {color: #054BBB}--></style>
+<meta name="FORMATTER" content="Microsoft FrontPage 2.0">
+</head>
+
+<body background="images/lines/blue_bar.gif" bgcolor="#FFFFFF"
+link="#000080" vlink="#008000">
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="3" width="700">
+    <tr>
+        <td valign="top" width="140">&nbsp;</td>
+        <td width="560"><h2 align="center">Suggested Topics For
+        Diploma Theses<br>
+        (Independent Studies)<br>
+        <br>
+        in</h2>
+        <h3 align="center"><font size="5"><strong><i>Parallel
+        Computing Systems<br>
+        </i></strong></font></h3>
+        <h2><b>Parallelizing Compilers - Parallelizing Tools</b></h2>
+        <p><font size="5"><strong>T</strong></font>his section
+        includes the development of simple parallelizing tools
+        according to known designing techniques. These tools are
+        precompilers -preprocessors and their task is the
+        automatic extraction of parallelism from sequential
+        programs. The sequential programs that are being studied,
+        consist of a huge number of nested loops, which demand
+        great computing power. Illustrative examples are the
+        algorithms of signal and image processing (matrix
+        operations, convolutions, pattern matching etc). Our goal
+        is the implementation and application of systematic
+        methods for parallelization of sequential programs, and
+        their mapping into parallel architectures. </p>
+        <p>The Laboratory of Digital Systems and Computers has ,
+        for many years, developped a remarkable activity in the
+        area of parallel processing , especially in the area of
+        automatic parallelization of sequential algorithms. There
+        have been developed software tools which are processing
+        programs written in high level languages and map them
+        into special purpose parallel architectures (e.g systolic
+        arrays) or general purpose (MIMD machines). In addition
+        to this, new fast algorithms for the automatic extraction
+        of parallelism are developped, and agorithms which map
+        nested loops into parallel architectures, following
+        various optimization criteria.</p>
+        <p><font size="4"><strong>Proposed Theses</strong></font></p>
+        <ul>
+            <li><em><b>Development of a tool for the automatic
+                partioning and optimum mapping of nested loops
+                into MIMD machines </b></em><p>This tool is a
+                software program which will partion and map
+                nested loops into MIMD machines. The program's
+                acceptable inputs consist of nested loops and by
+                applying specific transformations, it will assign
+                the loops' computational load to the available
+                parallel processors. The program's output will be
+                the partioning of the set of computations into
+                subsets which are as independent as possible
+                concerning the interchange of data among them.
+                Multiple optimization criteria may be applied,
+                and any research activity concerning tis subject
+                is well accepted. </p>
+                <p><b>Requirements: </b>Knowledge of C
+                programming under Unix / Windows and acquaintance
+                with parallel procesing principles. </p>
+            </li>
+            <li><em><b>Development of a tool for the simulation
+                of the operation of special Purpose VLSI
+                Processors (systolic Cells) over a parallel
+                machine of distributed memory (MIMD distributed
+                memory, Paragon , Gcel, PVM etc) </b></em><p>This
+                software tool will accept,as input, the
+                mathematical description of a systolic structure,
+                as the output of other already implemented
+                software tools, and will simulate its operation
+                onto a parallel machine. Special emphasis will be
+                given to the simulation model for the cells of
+                the systolic structure and to the functional
+                parameters such as the synchronization of
+                operations, the calculation of the message
+                casting among different cells (intercommunication
+                time) etc. Alterantively, the input may have the
+                form of an algorithmic description in a high
+                level language. For this purpose, a special
+                parser, developped in DSCLAB, is available, which
+                transforms the algorithmic description into a
+                mathematical one. Requirements: Knowledge of C
+                programming under Unix / windows and acquaintance
+                with parallel procesing principles.</p>
+            </li>
+        </ul>
+        <h3>Information: </h3>
+        <p><a href="/~papakon">Professor G. Papakonstantinou </a><br>
+        CS Building, tel: 772-2494 <br>
+        <b>e-mail:</b> <a href="/cgi-bin/mail?papakon"><i>papakon@cs.ece.ntua.gr</i>
+        </a><br>
+        <br>
+        <a href="/~nkoziris">Aris Koziris </a><br>
+        B Building, 7721529-32 <br>
+        <b>e-mail:</b> <a href="/cgi-bin/mail?nkoziris"><i>nkoziris@dsclab.ntua.gr</i>
+        </a></p>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top" width="140"><p align="center"><a
+        href="/"><font color="#FFFF00"><strong>Home
+        Page</strong></font></a></p>
+        <p align="center"><a href="/diploma.php"><font
+        color="#FFFF00"><strong><img
+        src="images/buttons/uparrow_blue.gif" border="0"
+        width="14" height="10"></strong></font></a></p>
+        </td>
+        <td width="560"><div align="center"><center><address>
+            Send your remarks to <a
+            href="mailto:webmaster@dsclab.ece.ntua.gr"><font
+            color="#0000A0">webmaster@dsclab.ece.ntua.gr</font></a><font
+            color="#0000A0"><br>
+            </font>Last modified: <!--webbot bot="Timestamp"
+            s-type="EDITED" s-format="%m.%d.%Y" startspan -->04.21.1997<!--webbot
+            bot="Timestamp" endspan i-checksum="13591" --> 
+        </address>
+        </center></div></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1 September 2005), see www.w3.org" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+  <meta name="generator" content=
+  "Docutils 0.4.1: http://docutils.sourceforge.net/" />
+
+  <title>Μελέτη του Επεξεργαστή Cell ως Περιβάλλον Εκτέλεσης
+  Παράλληλου Κώδικα</title>
+<style type="text/css">
+/*<![CDATA[*/
+
+body {
+        font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+        background-color: #ffffff; 
+        color: black;
+}
+
+p {
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
+h1 {
+        text-align: center;
+}
+
+img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px dotted black;
+        padding: 2px;
+}
+
+table {
+        border-collapse: collapse;
+        border: 2px solid black;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+
+td, th {
+        border: 1px dotted #b0b0b0;
+        padding: .5em;
+        text-align: left;
+}
+
+tr:hover {
+        background: #f0f0f0;
+}
+
+.section h1 {
+        font-size: 14px;
+        margin-right: 10px;
+        text-align: left;
+}
+
+a:link, a:visited {
+        color: #105ebd;
+        text-decoration: none;
+        border-bottom: 1px dashed  #105ebd;
+}
+
+a:hover, a:active {
+        color:#4a5d74;
+}
+
+ul {
+}
+
+li {
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+}
+
+
+blockquote li {
+        padding-top: 1px;
+}
+
+.links p {
+        margin: 0;
+        padding: 0;
+}
+
+p.caption {
+        text-align: center;
+        padding-bottom: 4px;
+        font-style: italic;
+}
+
+/*]]>*/
+</style>
+</head>
+
+<body>
+  <div class="document" id="cell">
+    <h1 class="title">Μελέτη του Επεξεργαστή Cell ως Περιβάλλον
+    Εκτέλεσης Παράλληλου Κώδικα</h1>
+
+    <table class="docinfo" frame="void" rules="none">
+      <col class="docinfo-name" />
+      <col class="docinfo-content" />
+
+      <tbody valign="top">
+        <tr class="field">
+          <th class="docinfo-name">Καθηγητής:</th>
+
+          <td class="field-body">Νεκτάριος Κοζύρης ( <a class=
+          "reference" href=
+          "mailto:nkoziris@cslab.ece.ntua.gr">nkoziris@cslab.ece.ntua.gr</a>
+          )</td>
+        </tr>
+
+        <tr class="field">
+          <th class="docinfo-name">Επικοινωνία:</th>
+
+          <td class="field-body">Κορνήλιος Κούρτης ( <a class=
+          "reference" href=
+          "mailto:kkourt@cslab.ece.ntua.gr">kkourt@cslab.ece.ntua.gr</a>
+          )</td>
+        </tr>
+
+        <tr class="field">
+          <th class="docinfo-name">Άτομα:</th>
+
+          <td class="field-body">1-2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section">
+      <h1><a id="id1" name="id1">Γενικά</a></h1>
+
+      <p>Ο Cell είναι ένας επεξεργαστής, ο οποίος δημιουργήθηκε από
+      τις Sony, Toshiba και IBM και αποτελεί την καρδία του
+      Playstation 3. Η διπλωματική αυτή αφορά τη χρήση του Cell ως
+      προγραμματιστική πλατφόρμα για παράλληλους κώδικες, όπως για
+      παράδειγμα επιστημονικές εφαρμογές.</p>
+
+      <p>Βασικά προαπαιτούμενα για την πραγμάτωση της διπλωματικής
+      εργασίας είναι:</p>
+
+      <ul class="simple">
+        <li>Γνώση και εμπειρία στο προγραμματιστικό περιβάλλον του
+        Linux. (μαθήματα: <em>Λειτουργικά Συστήματα</em> και
+        <em>Εργαστήριο Λειτουργικών Συστημάτων</em>).</li>
+
+        <li>Γνώση βασικών αρχών και τεχνικών παράλληλου
+        προγραμματισμού. (μάθημα: <em>Παράλληλη
+        Επεξεργασία</em>).</li>
+
+        <li>Γνώση βασικών αρχών της σύγχρονης αρχιτεκτονικής
+        υπολογιστών. (μάθημα: <em>Προηγμένα Θέματα Οργάνωσης
+        Υπολογιστών</em>).</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h1><a id="id2" name="id2">Τεχνικά χαρακτηριστικά του
+      Cell</a></h1>
+
+      <p>Ο Επεξεργαστής Cell (CBE -- Cell Broadband Engine) είναι
+      ένας ετερογενής πολυνηματικός επεξεργαστής και αποτελείται
+      από:</p>
+
+      <ul class="simple">
+        <li>1 Κεντρικό Επεξεργαστή (PPE -- Power Processign
+        Element).</li>
+
+        <li>8 Εξειδικευμένους Συνεπεξεργαστές (SPEs -- Synergistic
+        Processing Elements).</li>
+      </ul>
+
+      <p>Οι επεξεργαστικές μονάδες, η μνήμη και οι συσκευές Ε/Ε
+      επικοινωνούν μέσω μιας συνεκτικής (coherent) μονάδας διαύλου
+      (bus), η οποία ονομάζεται EIB -- Element Interconnect
+      Bus.</p>
+
+      <div class="figure">
+        <img alt="figs/cell.png" src="figs/cell.png" />
+
+        <p class="caption">Σχεδιάγραμμα του Cell</p>
+      </div>
+
+      <p>Η κεντρική επεξεργαστική μονάδα PPE, χρησιμοποιείται για
+      την εκτέλεση του λειτουργικού συστήματος και έχει τον ρόλο
+      του συντονισμού των συνεπεξεργαστών. Το PPE, αποτελείται από
+      το PPU -- Power Processing Unit, το οποίο είναι συνδεδεμένο
+      σε λανθάνουσες μνήμες (cache) δεδομένων και εντολών πρώτου
+      επιπέδου (L1) μεγέθους 32Kb και σε μία ενοποιημένη λανθάνουσα
+      μνήμη δεύτερου επιπέδου (L2) μεγέθους 512Κb. Το PPU είναι
+      ένας dual-issue, in-order επεξεργαστής που υποστηρίζει 128bit
+      εντολές SIMD.</p>
+
+      <p>Τα SPEs αποτελούνται από τη μονάδα επεξεργασίας (SPU --
+      Synergistic Processign Unit) και έναν ελεγκτή για την
+      πρόσβαση στη μνήμη (MFC -- Memory Flow Controller). Το κάθε
+      SPE λειτουργεί σε μία τοπική μνήμη (LS -- Local Store
+      Memory), στην οποία αποθηκεύει τόσο εντολές, όσο και
+      δεδομένα. Τα SPEs περιλαμβάνουν και έναν ελεγκτή DMA (DMA
+      Engine) για την μεταφορά δεδομένων από και προς την τοπική
+      μνήμη. Τα SPUs υποστηρίζουν 128bit εντολές SIMD και έχουν 128
+      registers των 128bit για εντολές ακεραίων και μεταβλητής
+      υποδιαστολής.</p>
+
+      <p>Το EIB χρησιμοποιείται για την επικοινωνία του PPE, των
+      SPEs, της κύριας μνήμης και των συσκευών Ε/Ε. Το EIB
+      αποτελείται από ένα δακτύλιο διευθύνσεων και τεσσάρων
+      δακτυλίων για τα δεδομένα. Η συχνότητα λειτουργίας του είναι
+      η μισή από αυτή του επεξεργαστή.</p>
+    </div>
+
+    <div class="section">
+      <h1><a id="id3" name="id3">Προγραμματιστικό
+      Περιβάλλον</a></h1>
+
+      <p>Το προγραμματιστικό περιβάλλον, στο οποίο θα
+      πραγματοποιηθεί η εργασία θα είναι το Cell SDK (Software
+      Development Kit), το οποίο αυτή τη στιγμή βρίσκεται στην
+      έκδοση 1.1 και περιλαμβάνει:</p>
+
+      <ul class="simple">
+        <li>GNU εργαλεία ανάπτυξης λογισμικού (compiler, assembler,
+        linker, debugger) για το SPU και τα PPU.</li>
+
+        <li>Πλήρης Εξομοιωτής Συστήματος για τον Cell.</li>
+
+        <li>Πυρήνας του Linux για τον Cell.</li>
+
+        <li>Βιβλιοθήκες Linux για την ανάπτυξη εφαρμογών και
+        μέτρηση της επίδοσης για τον Cell (SPE runtime management
+        library κλπ.).</li>
+
+        <li>Βιβλιοθήκες και Παραδείγματα Κώδικα, βελτιστοποιημένα
+        για τον επεξεργαστή Cell.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h1><a id="id4" name="id4">Στάδια Εργασίας</a></h1>
+
+      <ul class="simple">
+        <li>Βιβλιογραφική Μελέτη σχετικά με τον επεξεργαστή
+        Cell.</li>
+
+        <li>Εγκατάσταση του προσομοιωτή και εξοικείωσή με το
+        περιβάλλον.</li>
+
+        <li>Μελέτη των βιβλιοθηκών και των παραδειγμάτων κώδικα που
+        περιλαμβάνονται στο προγραμματιστικό περιβάλλον Cell
+        SDK.</li>
+
+        <li>Ανάπτυξη απλών εφαρμογών και εκτέλεσή τους στον
+        εξομοιωτή.</li>
+
+        <li>Ανάπτυξη απλής παράλληλης εφαρμογής για τον επεξεργαστή
+        Cell.</li>
+      </ul>
+    </div>
+
+    <div class="links section">
+      <h1><a id="links" name="links">Σχετικά Links</a></h1>
+
+      <ul>
+        <li>
+          <p class="first">Άρθρο για τον Cell στην wikipedia:</p>
+
+          <p><a class="reference" href=
+          "http://en.wikipedia.org/wiki/Cell_microprocessor">http://en.wikipedia.org/wiki/Cell_microprocessor</a></p>
+        </li>
+
+        <li>
+          <p class="first">Η σελίδα του Cell στην IBM:</p>
+
+          <p><a class="reference" href=
+          "http://www.ibm.com/developerworks/power/cell/">http://www.ibm.com/developerworks/power/cell/</a></p>
+        </li>
+
+        <li>
+          <p class="first">Τεχνική Τεκμηρίωση του Cell:</p>
+
+          <p><a class="reference" href=
+          "http://www.ibm.com/chips/techlib/techlib.nsf/products/Cell_Broadband_Engine">
+          http://www.ibm.com/chips/techlib/techlib.nsf/products/Cell_Broadband_Engine</a></p>
+        </li>
+
+        <li>
+          <p class="first">H σελίδα του Cell SDK στην IBM:</p>
+
+          <p><a class="reference" href=
+          "http://www.alphaworks.ibm.com/tech/cellsw">http://www.alphaworks.ibm.com/tech/cellsw</a></p>
+        </li>
+
+        <li>
+          <p class="first">Σελίδα για την χρήση Linux σε
+          Επεξεργαστές Cell στο BSC (Barcelona Supercomputing
+          Center):</p>
+
+          <p><a class="reference" href=
+          "http://www.bsc.es/projects/deepcomputing/linuxoncell/cbexdev.html">
+          http://www.bsc.es/projects/deepcomputing/linuxoncell/cbexdev.html</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

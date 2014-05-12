@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+
+
+
+
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 1 September 2005), see www.w3.org">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Docutils 0.4.1:
+  http://docutils.sourceforge.net/"><title>Μελέτη και αξιολόγηση διαφορετικών σχημάτων διαμοιρασμού ιεραρχίας μνήμης για αρχιτεκτονικές πολλαπλών πυρήνων</title>
+  
+<style type="text/css">
+/*<![CDATA[*/
+
+body {
+        font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+        background-color: #ffffff; 
+        color: black;
+}
+
+p {
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
+h1 {
+        text-align: center;
+}
+
+img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px dotted black;
+        padding: 2px;
+}
+
+table {
+        border-collapse: collapse;
+        border: 2px solid black;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+
+td, th {
+        border: 1px dotted #b0b0b0;
+        padding: .5em;
+        text-align: left;
+}
+
+tr:hover {
+        background: #f0f0f0;
+}
+
+.section h1 {
+        font-size: 14px;
+        margin-right: 10px;
+        text-align: left;
+}
+
+a:link, a:visited {
+        color: #105ebd;
+        text-decoration: none;
+        border-bottom: 1px dashed  #105ebd;
+}
+
+a:hover, a:active {
+        color:#4a5d74;
+}
+
+ul {
+}
+
+li {
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+}
+
+
+blockquote li {
+        padding-top: 1px;
+}
+
+.links p {
+        margin: 0;
+        padding: 0;
+}
+
+p.caption {
+        text-align: center;
+        padding-bottom: 4px;
+        font-style: italic;
+}
+
+/*]]>*/
+</style></head><body>
+  <div class="document" id="multicore-cache">
+    <h1 class="title">Μελέτη και αξιολόγηση διαφορετικών σχημάτων <br>
+	διαμοιρασμού ιεραρχίας μνήμης <br> για αρχιτεκτονικές πολλαπλών πυρήνων</h1>
+
+    <table class="docinfo" frame="void" rules="none">
+      <col class="docinfo-name">
+      <col class="docinfo-content">
+
+      <tbody valign="top">
+        <tr class="field">
+          <th class="docinfo-name">Καθηγητής:</th>
+
+          <td class="field-body">Νεκτάριος Κοζύρης ( <a class="reference" href="mailto:nkoziris@cslab.ece.ntua.gr">nkoziris@cslab.ece.ntua.gr</a>
+          )</td>
+        </tr>
+
+        <tr class="field">
+          <th class="docinfo-name">Επικοινωνία:</th>
+
+          <td class="field-body">Νίκος Αναστόπουλος ( <a class="reference"
+				  href="mailto:anastop@cslab.ece.ntua.gr">anastop@cslab.ece.ntua.gr</a>
+          )</td>
+        </tr>
+
+        <tr class="field">
+          <th class="docinfo-name">Άτομα:</th>
+
+          <td class="field-body">1</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section">
+      <h1><a id="id1" name="id1">Περιγραφή</a></h1>
+
+	  <p> Η ενσωμάτωση πολλαπλών επεξεργαστικών πυρήνων σε ένα chip (multicores
+	  ή CMPs - Chip Multi-Processors) κερδίζει συνεχώς έδαφος στην κατεύθυνση της 
+	  μεγιστοποίησης της απόδοσης των σύγχρονων επεξεργαστών.  
+	  Σε συνδυασμό με τον εγγενή παραλληλισμό που μπορεί να εξαχθεί από την
+	  εκάστοτε εφαρμογή, εκτιμάται ότι μπορεί συνδράμει σημαντικά στη μείωση του
+	  χρόνου εκτέλεσης των εφαρμογών, περισσότερο από ό,τι άλλες παράμετροι που
+	  δεν επιδέχονται σε μεγάλο βαθμό περαιτέρω βελτιστοποιήσεις (π.χ. συχνότητα
+	  λειτουργίας ή μικροαρχιτεκτονικά χαρακτηριστικά όπως η υπερβαθμωτή και η 
+	  out-of-order εκτέλεση εντολών ή η πρόβλεψη διακλαδώσεων).
+	  Αναμένεται ότι στα επόμενα χρόνια, ο αριθμός των πυρήνων που θα
+	  συμπεριλαμβάνονται σε ένα chip θα είναι της τάξης των δεκάδων ή ακόμα και
+	  των εκατοντάδων, οδηγώντας έτσι σε πολυ-πύρηνες αρχιτεκτονικές μεγάλης
+	  κλίμακας.  </p> 
+
+	  <p> Ωστόσο, δεν είναι ακόμα σαφές ποιος είναι ο πλέον ενδεδειγμένος τρόπος
+	  διαμοιρασμού της ιεραρχίας μνήμης, σε ένα περιβάλλον όπου μεγάλος αριθμός
+	  νημάτων μίας παράλληλης εφαρμογής εκτελούνται υπό έναν κοινό χώρο
+	  διευθύνσεων, και μπορεί να μοιράζονται ή και να ανταγωνίζονται για τα ίδια
+	  δεδομένα.
+	  </p>
+
+	  <p> Από τη μια πλευρά, έχουμε διαμορφώσεις όπου υπάρχει χαμηλός (ή
+	  καθόλου) διαμοιρασμός, και κάθε πυρήνας έχει δικά του τα υψηλότερα
+	  επίπεδα κρυφής μνήμης (Σχήμα 1). Αυτή είναι και η πολιτική που
+	  ακολουθήθηκε στις πρώτες υλοποιήσεις πολυπύρηνων επεξεργαστών που έκαναν
+	  την εμφάνισή τους τα τελευταία χρόνια. Το πλεονέκτημα τέτοιων σχημάτων
+	  είναι ότι κάθε πυρήνας έχει για αποκλειστική χρήση πολλαπλά επίπεδα κρυφής
+	  μνήμης, χωρίς να υπάρχει ο κίνδυνος τα δεδομένα πάνω στα οποία εργάζεται
+	  το αντίστοιχο νήμα να εκτοπιστούν λόγω συγκρούσεων με δεδομένα νημάτων από
+	  άλλους πυρήνες. Το μειονέκτημα είναι ότι η ενδο-επικοινωνία μεταξύ των
+	  νημάτων, για τους σκοπούς της ανταλλαγής δεδομένων ή του συγχρονισμού,
+	  πρέπει να περάσει από τα χαμηλότερα επίπεδα στην ιεραρχία (L3 cache ή
+	  κύρια μνήμη), με αποτέλεσμα να γίνεται με μεγάλη σχετικά καθυστέρηση 
+	  (latency) και μικρό ρυθμό (bandwidth). Σε αυτά, προστίθεται
+	  και η επιπλέον επιβάρυνση εξαιτίας της λειτουργίας του πρωτοκόλλου συνοχής
+	  δεδομένων (coherency protocol), από τη στιγμή που υπάρχουν πολλαπλά αντίγραφα
+	  των ίδιων δεδομένων σε διαφορετικές κρυφές μνήμες.
+	  </p>
+
+
+      <div class="figure">
+        <img src="multicore-cache-thesis_files/low_degree.png">
+        <p class="caption">Σχήμα 1: Σενάριο χαμηλού διαμοιρασμού ιεραρχίας μνήμης</p>
+      </div>
+
+	  <p> Στην άλλη πλευρά, έχουμε διαμορφώσεις με υψηλό (ή πλήρη) διαμοιρασμό,
+	  με τους πυρήνες να μοιράζονται τα περισσότερα επίπεδα κρυφής μνήμης (Σχήμα 2). 
+	  Σε αυτή την περίπτωση, η ενδο-επικοινωνία είναι αποτελεσματικότερη, εφόσον η 
+	  διασύνδεση γίνεται στο εσωτερικό του chip (σε υψηλές συχνότητες, μικρές 
+	  καθυστερήσεις και μεγάλο εύρος δεδομένων, δηλαδή), ενώ δεν υπάρχει επιβάρυνση 
+	  λόγω κάποιου πρωτοκόλλου συνοχής. Από τη στιγμή όμως που υπάρχει διαμοιρασμός, 
+	  σε κάθε πυρήνα αναλογεί κατ’ ουσία μικρότερο μέρος της κρυφής μνήμης σε σχέση με
+	  την πρώτη περίπτωση, ενώ υπάρχει και ο κίνδυνος συγκρούσεων μεταξύ των
+	  δεδομένων των νημάτων. 
+	  </p>
+
+      <div class="figure">
+        <img src="multicore-cache-thesis_files/high_degree.png">
+        <p class="caption">Σχήμα 2: Σενάριο υψηλού διαμοιρασμού ιεραρχίας μνήμης</p>
+      </div>
+	  
+
+	  <div class="section">
+      <h1><a id="id2" name="id2">Ζητούμενο</a></h1>
+
+	  <p> Στην διπλωματική εργασία αυτή, ο φοιτητής καλείται κατά κάποιο τρόπο να
+	  απαντήσει στο εξής ερώτημα: <em> δεδομένου συγκεκριμένου αριθμού πυρήνων και
+	  συγκεκριμένης χωρητικότητας για κάθε επίπεδο κρυφής μνήμης, ποιος είναι ο
+	  πιο αποδοτικός τρόπος να διαμοιραστεί και να απεικονιστεί το κάθε επίπεδο
+	  σε αυτούς; </em>
+	  </p>
+
+	  <p> Θα διερευνηθούν διάφορα πιθανά σενάρια διάταξης και διαμοιρασμού της
+	  κρυφής μνήμης, στη λογική των όσων αναφέρθηκαν στα παραπάνω. Για κάθε
+	  σχήμα, θα μελετηθεί ο τρόπος που επηρεάζουν την απόδοση μια σειρά από
+	  βασικές παράμετροι λειτουργίας της κρυφής μνήμης, όπως η χωρητικότητα, η
+	  συσχετιστικότητα, ο χρόνος επικοινωνίας με τον επεξεργαστή ή με χαμηλότερα
+	  επίπεδα στην ιεραρχία, κ.λπ. 
+	  </p>
+	  </div>
+
+  	  
+	  <div class="section">
+      <h1><a id="id3" name="id3">Λεπτομέρειες Υλοποίησης</a></h1>
+
+	  <p> Για τους σκοπούς της αξιολόγησης, θα χρησιμοποιηθεί ο προσομοιωτής
+	  Μ5. Ο Μ5 έχει τη δυνατότητα να κάνει πλήρη προσομοίωση ενός υπολογιστικού
+	  συστήματος (full system simulation), από τον επεξεργαστή και τις μνήμες,
+	  μέχρι τις διάφορες περιφερειακές συσκευές (αποθήκευση, δίκτυο,  κ.λπ.).
+	  Είναι αρκετά ευέλικτος, από την άποψη ότι o χρήστης έχει τη δυνατότητα να
+	  ορίσει τις βασικές παραμέτρους λειτουργίας του εκάστοτε συστατικού
+	  στοιχείου που προσομοιώνεται (π.χ. L1 cache), καθώς και τον τρόπο που
+	  διασυνδέονται τα επιμέρους συστατικά στοιχεία.
+	  </p>
+
+	  <p> Σαν μετροπρογράμματα για την αξιολόγηση της απόδοσης των διαφόρων σχημάτων
+	ιεραρχίας μνήμης, θα χρησιμοποιηθούν φορτία εργασίας από επιστημονικούς
+	κώδικες που ακολουθούν το μοντέλο της παράλληλης εκτέλεσης σε μοιραζόμενη
+	μνήμη.  Για την ανάπτυξη τέτοιων εφαρμογών, θα χρησιμοποιηθούν "cross" GNU
+	εργαλεία (compiler, assembler, linker, κ.λπ.) τα οποία θα παράγουν κώδικα
+	και εκτελέσιμα για την αρχιτεκτονική του συστήματος που προσομοιώνεται
+	(Alpha ISA).
+	  </p>
+  
+
+    <div class="section">
+      <h1><a id="id4" name="id4">Προαπαιτούμενα</a></h1>
+
+      <ul class="simple">
+        <li> καλή γνώση αρχιτεκτονικής υπολογιστών </li>
+
+        <li> καλή γνώση στις αρχές παράλληλου προγραμματισμού και ειδικότερα
+		στον πολυνηματικό προγραμματισμό (σε γλώσσα C) </li>
+
+        <li> βασικές γνώσεις σε Linux και στα GNU  εργαλεία ανάπτυξης
+		λογισμικού </li>
+
+      </ul>
+    </div>
+
+	
+    <div class="section">
+      <h1><a id="id5" name="id5">Σχετική Βιβλιογραφία - Links</a></h1>
+
+      <ul class="simple">
+        <li> η σελίδα του M5 στο πανεπιστήμιο του Michigan: <br>  
+		<a class="reference" href="http://m5.eecs.umich.edu/wiki/index.php/Main_Page">
+http://m5.eecs.umich.edu/wiki/index.php/Main_Page </a> 
+		</li>
+
+		<li> πρόσφατο άρθρο σχετικά με τον Μ5 στο ΙΕΕΕ Micro (July/August): <br>
+			<em>The M5 Simulator: Modeling Networked Systems.</em> <br> 
+			N. Binkert, R. Dreslinski, L. Hsu, K. Lim, A. Saidi and Steven Reinhardt.
+		</li>
+	
+		
+        <li> άρθρα πάνω σε επεξεργαστές που ενσωματώνουν πολλαπλές ροές
+		εκτέλεσης και διαφορετικά σχήματα διαμοιρασμού της κρυφής μνήμης:
+		<ul class="simple">
+		
+			<li> <em>IBM Power5 Chip: A Dual-Core Multithreaded Processor. </em> <br>
+		 	R. Kalla, B. Sinharoy, J. Tendler - IEEE Micro, vol. 24, no. 2, 2004
+			</li>
+
+			<li> <em> Hyper-Threading Technology Architecture and Microarchitecture.</em><br>
+		   	D. Marr, F. Binns, D. Hill, G. Hinton, D. Koufaty, J. Miller, M.
+			Upton - Intel Technology Journal, vol.3, issue 1, 2002
+			</li>
+
+			<li> <em> Niagara: A 32-Way Multithreading Sparc Processor.</em> <br> 
+			P. Kongetira, K. Aingaran, K. Olukotun - IEEE Micro, vol. 25, no. 2, 2005
+			</li>
+
+			<li> <em>CMP Implementation in Systems Based on the Intel Core Duo
+			Processor.</em> <br>
+		   	A. Mendelson, J. Mandelblat, S. Gochman, A. Shemer, R. Chabukswar, 
+			E. Niemeyer, A. Kumar - Intel Technology Journal, vol. 10, issue 2, 2006
+			</li>
+			
+		</ul>
+		</li>
+
+
+      </ul>
+    </div>
+
+
+  </div>
+
+</body></html>

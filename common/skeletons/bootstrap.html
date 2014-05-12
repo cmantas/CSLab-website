@@ -1,0 +1,284 @@
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Examples</title>
+	<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="screen" />
+	<link href="../css/cslab_custom.css" rel="stylesheet" type="text/css" media="screen" />
+	<script src="../js/jquery.min.js"></script> 	
+	<script src="../js/bootstrap.js"></script> 
+
+	 <script>
+	function show_hide(father){
+		father.getElementsByClassName("easter_egg")[0].style.display=
+					father.getElementsByClassName("easter_egg")[0].style.display==="none" ?
+						"block" : "none" ;
+	}
+	</script>	
+</head>
+
+<h2> <span>an h2 header  </span></h2>
+
+<h3>Emphasis</h3>
+          <div class="bs-docs-example">
+            <p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+            <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+          </div>
+
+<h3> Blockquotes</h3>
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+</blockquote>
+
+<h3>Horisontal Lists</h3>
+<dl class="dl-horizontal">
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+            <dt>Malesuada porta</dt>
+            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+            <dt>Felis euismod semper eget lacinia</dt>
+            <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+          </dl>
+
+<h3>Inline</h3>
+For example, <code>&lt;section&gt;</code> should be wrapped as inline.
+<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+
+<h3>Table</h3>
+	<table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+also : table-bordered, table-striped, table-hover, table-condensed
+
+<h3>Row Classes</h3>
+<table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Product</th>
+                  <th>Payment Taken</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="success">
+                  <td>1</td>
+                  <td>TB - Monthly</td>
+                  <td>01/04/2012</td>
+                  <td>Approved</td>
+                </tr>
+                <tr class="error">
+                  <td>2</td>
+                  <td>TB - Monthly</td>
+                  <td>02/04/2012</td>
+                  <td>Declined</td>
+                </tr>
+                <tr class="warning">
+                  <td>3</td>
+                  <td>TB - Monthly</td>
+                  <td>03/04/2012</td>
+                  <td>Pending</td>
+                </tr>
+                <tr class="info">
+                  <td>4</td>
+                  <td>TB - Monthly</td>
+                  <td>04/04/2012</td>
+                  <td>Call in to confirm</td>
+                </tr>
+              </tbody>
+            </table>
+
+<h3>Buttons</h3>
+<table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>class=""</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button type="button" class="btn">Default</button></td>
+                <td><code>btn</code></td>
+                <td>Standard gray button with gradient</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-primary">Primary</button></td>
+                <td><code>btn btn-primary</code></td>
+                <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-info">Info</button></td>
+                <td><code>btn btn-info</code></td>
+                <td>Used as an alternative to the default styles</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-success">Success</button></td>
+                <td><code>btn btn-success</code></td>
+                <td>Indicates a successful or positive action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-warning">Warning</button></td>
+                <td><code>btn btn-warning</code></td>
+                <td>Indicates caution should be taken with this action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-danger">Danger</button></td>
+                <td><code>btn btn-danger</code></td>
+                <td>Indicates a dangerous or potentially negative action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-inverse">Inverse</button></td>
+                <td><code>btn btn-inverse</code></td>
+                <td>Alternate dark gray button, not tied to a semantic action or use</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-link">Link</button></td>
+                <td><code>btn btn-link</code></td>
+                <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
+              </tr>
+            </tbody>
+          </table>
+
+<h3>Hero Unit</h3>
+<div class="hero-unit">
+  <h1>Heading</h1>
+  <p>Tagline</p>
+  <p>
+    <a class="btn btn-primary btn-large">
+      Learn more
+    </a>
+  </p>
+</div>
+
+<h3>Hero Unit with hidden content</h3>
+
+<div onclick="show_hide(this);" class="hero-unit center hidden-hero">
+	<i class="icon-chevron-down"></i>
+	Title of this hero unit
+	<i class="icon-chevron-down "></i>
+	<div class="easter_egg center" style="display:none;">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sollicitudin sapien est, at euismod enim volutpat sed. Nam semper diam ac nibh auctor, consequat pharetra ligula scelerisque. Ut pulvinar varius urna, vel dictum ipsum varius eu. Integer fringilla, risus ac egestas rutrum, dolor justo porttitor urna, nec elementum ligula augue quis nibh. Duis bibendum mollis ligula eget hendrerit. Nam tincidunt ligula nunc. Donec a felis aliquet, tincidunt magna eget, mollis urna. Ut vitae nisl tristique, semper erat sit amet, interdum justo. Curabitur a urna suscipit, sollicitudin ipsum vitae, ornare ipsum.
+	</div>
+</div>
+
+<h3>Clickable text with hidden content</h3>
+
+<div onclick="show_hide(this);" style="cursor:pointer">
+	<i class="icon-chevron-down"></i>
+	hello, this is some text
+	<div class="easter_egg well" style="display: none;">
+		this is some hidden text
+	</div>
+</div>
+
+<h3>Hero Unit with hidden code</h3>
+
+<div onclick="show_hide(this);" class="hero-unit center hidden-hero">
+	<i class="icon-chevron-down"></i>
+	Code example
+	<i class="icon-chevron-down "></i>
+	<div class="easter_egg center" style="display:none;">
+		<h3>This can be used for code examples</h3>
+		 Be sure to escape any angle brackets in the code for proper rendering.
+<pre>
+  &lt;p&gt;Sample text here...&lt;/p&gt;
+...
+public class HelloWorld {
+        public static void main(String [] args) {
+            String a = "e";
+            String b = "l";
+            String c = "w";
+            String d = "o";
+            String e = "H";
+            String f = "r";
+            String g = "d";
+            String final1 = e + a + b + b + d;
+            String final2 = c + d + f + b + g;
+            String low = final1.toLowerCase();
+            System.out.println(low + " " + final2);
+        }
+    }
+</pre>
+	</div>
+</div>
+
+<h3> Page Header</h3>
+<div class="page-header">
+  <h1>Example page header <small>Subtext for header</small></h1>
+</div>
+
+<h3>Thubnails</h3>
+<ul class="thumbnails">
+  <li class="span4">
+    <div class="thumbnail">
+      <img data-src="holder.js/300x200" alt="">
+      <h3>Thumbnail label</h3>
+      <p>Thumbnail caption...</p>
+      this is something I write here
+    </div>
+  </li>
+  <li class="span4">
+    <div class="thumbnail">
+      <img src="../img/logo.png" alt="">
+      <h3>Thumbnail label</h3>
+      <p>Thumbnail caption...</p>
+    </div>
+  </li>
+</ul>
+
+<h3>Alerts</h3>
+<div class="alert alert-block">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <h4>Warning!</h4>
+  Best check yo self, you're not...
+</div>
+<div class="alert alert-error">
+              <button type="button" class="close" data-dismiss="alert">×</button>
+              <strong>Oh snap!</strong> Change a few things up and try submitting again.
+ </div>
+also: alert-success (green), alert-info (blue)
+
+
+<h3>Wells</h3>
+<div class="well">
+              Look, I'm in a well!
+            </div>
+
+
+
+
+

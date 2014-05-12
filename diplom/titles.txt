@@ -1,0 +1,264 @@
+<h2>2012 - 2013
+<h3>Αρχιτεκτονική-Παράλληλα Συστήματα-Λειτουργικά Συστήματα-Εικονικές Μηχανές</h3>
+
+<li>
+Συνοπτική Περιγραφή Θεμάτων (<a href="/diplom/files/diploma-2012-2013.pdf">pdf</a>) <font color = "red">UPDATED!  </font>
+</li>
+
+<h3>Κατανεμημένα Συστήματα</h3>
+
+<li>
+Μελέτη Απόδοσης Κατανεμημένων Βάσεων Δεδομένων  Για Γράφους για Διαχείριση Διασυνδεδεμένων Δεδομένων   (<a href="/diplom/files/distributed_graph_dbs_2012_2013.pdf">pdf</a>)
+</li>
+
+
+<h2>2011 - 2012
+<h3>Αρχιτεκτονική-Παράλληλα Συστήματα-Λειτουργικά Συστήματα-Εικονικές Μηχανές</h3>
+
+<li>
+Συνοπτική Περιγραφή Θεμάτων (<a href="/diplom/files/diploma-2011-2012.pdf">pdf</a>)
+</li>
+<li>
+Παράλληλα προγραμματιστικά μοντέλα βασισμένα σε εργασίες: μελέτη και βελτιστοποιήσεις
+   (<a href="/diplom/files/diplom_tbb_2012.pdf">pdf</a>)
+</li>
+
+<h3>Κατανεμημένα Συστήματα</h3>
+
+<li>
+Εφαρμογή Διαμοιρασμού Αρχείων μέσω Υπηρεσιών Cloud (Cloud Sharing Application)
+   (<a href="/diplom/files/pithos.pdf">pdf</a>)
+</li>
+<li>
+Χωροχρονικός Συσχετισμός Πληροφοριών Κοινωνικών Δικτύων.
+   (<a href="/diplom/files/space-time.pdf">pdf</a>)
+</li>
+
+<li>
+Διατήρηση της Ανωνυμίας Σχεσιακών Δεδομένων σε Κατανεμημένα Περιβάλλοντα
+(<a href="/diplom/files/thesis_distributed_anonymity.pdf">pdf</a>)
+</li>
+<li>
+   Χρήση Χωροχρονικής Πληροφορίας από Δίκτυα Κοινωνικής Δικτύωσης για Εφαρμογές Διαχείρισης Κυκλοφορίας
+   (<a href="/diplom/files/thesis_traffic_flow_control.pdf">pdf</a>)
+</li>
+
+
+<h2>2010 - 2011
+
+<li>
+   Κατανεμημένη Αποθήκευση και Δεικτοδότηση Πληροφοριών Κοινωνικών Δικτύων
+    (<a href=/diplom/files/thesis_twitter.pdf>pdf</a>)
+</li>
+
+   Παραλληλοποίηση εφαρμογών σε αρχιτεκτονικές υψηλής επίδοσης
+    (<a href=/diplom/files/diploma-2010-2011-parallel-applications.pdf>pdf</a>)
+</li>
+<li>
+Δρομολόγηση εφαρμογών σε υβριδικές πολυνηματικές αρχιτεκτονικές για αποτελεσματική διαχείριση μοιραζόμενων πόρων.
+(<a href="/diplom/files/diplom10_11/diplom_cmpsched.pdf">pdf</a>)
+</li>
+<li>
+Μελέτη, αξιολόγηση και βελτιστοποίηση υλοποιήσεων του task programming model.
+(<a href="/diplom/files/diplom10_11/diplom_tbb.pdf">pdf</a>)
+</li>
+<li>
+Μελέτη, αξιολόγηση και βελτιστοποίηση ιεραρχίας μνήμης σε πολυεπεξεργαστικά συστήματα.
+(<a href="/diplom/files/diplom10_11/diplom_caches.pdf">pdf</a>)
+</li>
+
+
+<h2>2009 - 2010
+
+
+Μελέτη και αξιολόγηση εναλλακτικών τεχνικών αποθήκευσης αραιών πινάκων βασισμένων σε κανονικότητες
+   (<a href=/diplom/files/diploma-spmv-patterns.pdf>pdf</a>)
+</li>
+ 
+Υλοποίηση Παράλληλων Επιστημονικών Εφαρμογών σε Συστοιχίες Πολυπύρηνων Επεξεργαστών
+   (<a href=/diplom/files/diploma-cluster-applications.pdf>pdf</a>)
+</li>
+ 
+Αλγόριθμοι γράφων σε ετερογενείς πολυπύρηνες αρχιτεκτονικές
+   (<a href=/diplom/files/cell_graph.pdf>pdf</a>)
+</li>
+ 
+Μελέτη προγραμματιστικών μοντέλων για τον επεξεργαστή Cell
+   (<a href=/diplom/files/cell_prog_models.pdf>pdf</a>)
+</li>
+ 
+Αξιοποίηση Μεταευριστικών Μεθόδων για τη Βελτιστοποίηση Λογισμικού σε Αρχιτεκτονικές Υψηλής Επίδοσης
+   (<a href=/diplom/files/diploma-metaheuristic.pdf>pdf</a>)
+</li>
+
+
+<h2>2008 - 2009
+
+<li>
+Μελέτη και υλοποίηση του αριθμητικού υπολογιστικού πυρήνα του Πολλαπλασιασμού Αραιού Πίνακα με Διάνυσμα σε μαζικά πολυνηματικούς επεξεργαστές γραφικών.
+(<a href=/diplom/files/diploma-gpus-spmv.pdf>pdf</a>)
+</li>
+<li>
+Συγκριτική μελέτη μεθόδων αποθήκευσης αραιών πινάκων σε μπλοκ για την βελτιστοποίηση του αριθμητικού υπολογιστικού πυρήνα του Πολλαπλασιασμού Αραιού Πίνακα με Διάνυσμα.
+(<a href=/diplom/files/diploma-spmv-blocking.pdf>pdf</a>)
+</li>
+<li>
+Υλοποίηση Στρώματος Μοιραζόμενης Πρόσβασης σε Συσκευές
+Δικτύου για Εικονικές Μηχανές.
+(<a href="/diplom/files/diploma-myrixen.pdf">pdf</a>)
+</li>
+
+
+<h2>2007 - 2008
+
+<li>
+Κατανεμημένη διαχείριση αντιγράφων σε πλέγματα δεδομένων χρησιμοποιώντας δομημένα συστήματα ομοτίμων (structured peer to peer systems).
+ (<a href="/diplom/files/ikons_p2p_cdn.pdf">pdf</a>)
+</li>
+<li>
+Υλοποίηση Κατανεμημένου Συστήματος Ισοτίμων (peer-to-peer) Κόμβων για αποθήκευση/ανάκτηση Σχεσιακών Δεδομένων. (<a href="/diplom/files/grouPeer_diplomatiki.pdf">pdf</a>)
+</li>
+
+  
+Σχεδίαση και Yλοποίηση Oδηγού Συσκευής για τη Χρήση
+Προσαρμογέα Myrinet ως Αποθηκευτικού Μέσου Υψηλής
+Επίδοσης στο Λειτουργικό Σύστημα Linux
+(<a href="/diplom/files/2007-myrinet-blockdev.pdf">pdf</a>)
+  </li>
+  
+
+<h2>2006 - 2007
+  
+  
+Υλοποίηση Βιβλιοθήκης Προγραμμάτων για την Μελέτη Επιδόσεων Σύγχρονων Επεξεργαστών
+(<a href="/diplom/files/cpuprof-06_07/cpuprof-diplom.html">html</a>, 
+ <a href="/diplom/files/cpuprof-06_07/cpuprof-diplom.pdf">pdf</a>)
+</li>
+<li>
+  
+Μελέτη του Επεξεργαστή Cell ως Περιβάλλον Εκτέλεσης Παράλληλου Κώδικα
+(<a href="/diplom/files/cell-06_07/cell-diplom.html">html</a>, 
+ <a href="/diplom/files/cell-06_07/cell-diplom.pdf">pdf</a>)
+</li>
+<li>
+Μελέτη και αξιολόγηση διαφορετικών σχημάτων διαμοιρασμού ιεραρχίας μνήμης
+για αρχιτεκτονικές πολλαπλών πυρήνων
+(<a href="/diplom/files/multicore-caches/multicore-cache-thesis.html">html</a>,
+<a href="/diplom/files/multicore-caches/multicore-cache-thesis.pdf">pdf</a>)
+ </li>
+<li>
+Αριθμητική Επίλυση Μερικών Διαφορικών Εξισώσεων σε Αρχιτεκτονικές Κατανεμημένης Μνήμης
+(<a href="/diplom/files/pde-06_07/pde-diplom.html">html</a>,
+<a href="/diplom/files/pde-06_07/pde-diplom.pdf">pdf</a>)
+ </li>
+<li>
+Βελτιστοποήηση Εκτελεσης Εφαρμογών με Αραιούς Πίνακες σε Συστήματα Υψηλών Επιδόσ
+εων
+(<a href="/diplom/files/sparse-06_07/sparse-diplom.html">html</a>,
+<a href="/diplom/files/sparse-06_07/sparse-diplom.pdf">pdf</a>)
+ </li>
+<li>
+Διπλωματικές Εργασίες για Υπλογιστικά Πλέγματα (GRIDs)
+(<a href="/diplom/files/grid-sec-06_07.pdf">pdf</a>)
+</li>
+
+  
+  
+
+<h2>2005 - 2006
+
+<li>
+    Επέκταση εργαλείου παραλληλοποίησης ακολουθιακών προγραμμάτων 
+    (<a href="/diplom/files/parallhlopoihsh.pdf">pdf</a>)
+</li>  
+<li>
+    Υλοποίηση αλγορίθμων σε επαναδιατάξιμες αρχιτεκτονικές 
+    (<a href="/diplom/files/reconfig_architec.pdf">pdf</a>)
+</li>  
+<li>
+    Συσχεδίαση υλικού - λογισμικού για ενσωματωμένα συστήματα 
+    (<a href="/diplom/files/susxediash.pdf">pdf</a>)
+</li>  
+<li>
+    Σχεδίαση ευφυών ενσωματωμένων συστημάτων με ανακριβή συμπερασματολογία
+</li>  
+<li>
+    Σύνθεση κυκλωμάτων βασισμένων σε πύλες αποκλειστικού Η  
+    (<a href="/diplom/files/XOR.pdf">pdf</a>)
+</li>  
+<li>
+    Σύνθεση κυκλωμάτων βασισμένων σε κβαντικές πύλες 
+    (<a href="/diplom/files/quantumGates.pdf">pdf</a>) 
+</li>  
+<li>
+    Σύνθεση κυκλωμάτων για μη πλήρως ορισμένες λογικές συναρτήσεις 
+    (<a href="/diplom/files/incomplete.pdf">pdf</a>)
+</li>
+
+
+<h2> 2004 - 2005 
+
+<li>
+Θέματα διπλωματικών εργασιών σε συστοιχίες παράλληλης
+εξυπηρέτησης εφαργών Διαδικτύου 
+( <a href="/diplom/files/diplom-storage.pdf">pdf</a>)
+</li>
+
+
+
+<h2>2003 - 2004
+
+   
+    
+    All diploma thesis 
+    (<a href="/diplom/files/all-diplomas2003-04.pdf">pdf</a>)
+  </li>  
+<li>
+    Dynamic Scheduling of Uniform Dependence Loops &amp; 
+Automatic Parallel Code Generation for Distributed Memory Systems 
+(<a href="/diplom/files/dynamic_sched.pdf">pdf</a>)
+  </li>  
+<li>
+    Graphical Representation &amp; Evaluation of Scheduling Algorithms 
+(Visual C++, Win32 programming, OpenGL/DirectX) 
+(<a href="/diplom/files/graphic_representation.pdf">pdf</a>)
+  </li>  
+<li>
+     Υλοποίηση σε C Αλγορίθμων Συντακτικής Ανάλυσης Γραμματικών 
+ Χωρίς Συμφραζόμενα (Context-free Grammars)
+ (<a href="/diplom/files/diplom1.pdf">pdf</a>)
+  </li>  
+<li>
+     Υλοποίηση επεξεργαστή RISC σε VERILOG 
+ (<a href="/diplom/files/diplom2.pdf">pdf</a>)
+  </li>  
+<li>
+     Static mapping of nested loops onto shared memory systems 
+ (<a href="/diplom/files/algo_map_loops.pdf">pdf</a>)
+  </li>
+
+
+<h2>2002 - 2003
+
+<li>
+   Linux File Systems 
+   (<a href="/diplom/files/linux_file_systems.pdf">pdf</a>)
+</li>  
+<li>
+   Linux Parallel File Systems 
+   (<a href="/diplom/files/pvfs.pdf">pdf</a>)
+</li>  
+<li>
+   Web Server Load Balancing 
+   (<a href="/diplom/files/web_server_load_balancing.pdf">pdf</a>)
+</li>  
+<li>
+   Fast Cluster Storage 
+   (<a href="/diplom/files/fast_cluster_storage.pdf">pdf</a>)
+</li>  
+<li>
+    Code optimization for parallel execution of programs using 
+the  "tiling" technique 
+(<a href="/diplom/files/diplom-tiling-2002.pdf">pdf</a>)
+</li>
+

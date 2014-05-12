@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1 September 2005), see www.w3.org" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+  <meta name="generator" content=
+  "Docutils 0.4.1: http://docutils.sourceforge.net/" />
+
+  <title>Υλοποίηση Βιβλιοθήκης Προγραμμάτων για την Μελέτη
+  Επιδόσεων Σύγχρονων Επεξεργαστών</title>
+<style type="text/css">
+/*<![CDATA[*/
+
+body {
+        font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+        background-color: #ffffff; 
+        color: black;
+}
+
+p {
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
+h1 {
+        text-align: center;
+}
+
+img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px dotted black;
+        padding: 2px;
+}
+
+table {
+        border-collapse: collapse;
+        border: 2px solid black;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+
+td, th {
+        border: 1px dotted #b0b0b0;
+        padding: .5em;
+        text-align: left;
+}
+
+tr:hover {
+        background: #f0f0f0;
+}
+
+h1.title {
+        font-size: 20px;
+        margin-right: 10px;
+        text-align: center;
+    padding-top: 51px;
+    padding-bottom: 27px;
+}
+
+.section h1 {
+        font-size: 18px;
+        margin-right: 10px;
+        text-align: left;
+}
+
+.section h2 {
+        font-size: 16px;
+        margin-right: 10px;
+        text-align: left;
+}
+
+.section h3 {
+        font-size: 14px;
+        margin-right: 10px;
+        text-align: left;
+}
+
+a:link, a:visited {
+        color: #105ebd;
+        text-decoration: none;
+        border-bottom: 1px dashed  #105ebd;
+}
+
+a:hover, a:active {
+        color:#4a5d74;
+}
+
+ul {
+}
+
+li {
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+}
+
+
+blockquote li {
+        padding-top: 1px;
+}
+
+.links p {
+        margin: 0;
+        padding: 0;
+}
+
+p.caption {
+        text-align: center;
+        padding-bottom: 4px;
+        font-style: italic;
+}
+
+/*]]>*/
+</style>
+</head>
+
+<body>
+  <div class="document" id="id1">
+    <h1 class="title">Υλοποίηση Βιβλιοθήκης Προγραμμάτων για την
+    Μελέτη Επιδόσεων Σύγχρονων Επεξεργαστών</h1>
+
+    <table class="docinfo" frame="void" rules="none">
+      <col class="docinfo-name" />
+      <col class="docinfo-content" />
+
+      <tbody valign="top">
+        <tr class="field">
+          <th class="docinfo-name">Καθηγητής:</th>
+
+          <td class="field-body"><strong>Νεκτάριος Κοζύρης</strong>
+          ( <a class="reference" href=
+          "mailto:nkoziris@cslab.ece.ntua.gr">nkoziris@cslab.ece.ntua.gr</a>
+          )</td>
+        </tr>
+
+        <tr class="field">
+          <th class="docinfo-name">Επικοινωνία:</th>
+
+          <td class="field-body"><em>Γεώργιος Τσουκαλάς</em> (
+          <a class="reference" href=
+          "mailto:gtsouk@cslab.ece.ntua.gr">gtsouk@cslab.ece.ntua.gr</a>
+          )</td>
+        </tr>
+
+        <tr class="field">
+          <th class="docinfo-name">Άτομα:</th>
+
+          <td class="field-body"><em>1-2</em></td>
+        </tr>
+      </tbody>
+    </table><!-- .. raw:: latex
+
+   \ \ \tt
+
+<`nkoziris@cslab.ece.ntua.gr <mailto:nkoziris@cslab.ece.ntua.gr>`__>
+
+.. raw:: latex
+
+   \normalfont
+
+.. force paragraph break with this comment
+
+Επικοινωνία: . . . *Γεώργιος Τσουκαλάς* . . .
+
+.. raw:: latex
+
+   \ \ \tt
+
+<`gtsouk@cslab.ece.ntua.gr <mailto:gtsouk@cslab.ece.ntua.gr>`__>
+
+.. raw:: latex
+
+   \normalfont -->
+    <!-- force paragraph break with this comment
+
+Άτομα: . . . *1-2* . . . -->
+
+    <div class="section">
+      <h1><a id="id2" name="id2">Εισαγωγή</a></h1>
+
+      <ul class="simple">
+        <li><em>Είναι δυνατόν ένας 2.4 GHz επεξεργαστής να μετρήσει
+        μέχρι τα 2.4 δις σε λιγότερο από 1 δευτερόλεπτο;</em></li>
+
+        <li><em>Ποιος είναι πιο γρήγορος, ο επεξεργαστής ή η
+        μνήμη;</em></li>
+
+        <li><em>Πόσο γρήγορα τρέχει το laptop των 100
+        δολαρίων;</em></li>
+
+        <li><em>Γιατί ένας θεωρητικά καλύτερος αλγόριθμος τρέχει
+        πιο αργά από έναν άλλον στην πράξη;</em></li>
+
+        <li><em>Γιατί ο επεξεργαστής Α τρέχει το πρόγραμμα Π1 πιο
+        γρήγορα από το Π2 ενώ ο επεξεργαστής Β τρέχει το Π2 πιο
+        γρήγορα από το Π1;</em></li>
+
+        <li><em>Γιατί ο μεταγλωττιστής που φτιάχνουν οι αυθεντίες
+        δεν μπορεί να κάνει μια απλή βελτιστοποίηση που μπορεί να
+        κάνει ένας ταπεινός προγραμματιστής;</em></li>
+
+        <li><em>Πόσο πιο γρήγορος είναι ένας επεξεργαστής server
+        από έναν desktop;</em></li>
+
+        <li><em>Είναι δυνατόν ένα πρόγραμμα με περισσότερα cache
+        misses να είναι πιο γρήγορο από ένα άλλο με λιγότερα
+        misses;</em></li>
+
+        <li><strong>Γιατί; Πόσο;</strong></li>
+      </ul>
+
+      <p>Για την προσέγγιση των θεμάτων που θίγουν οι ερωτήσεις
+      αυτές απαιτείται γνώση του ενδότερου χώρου της οργάνωσης και
+      του προγραμματισμού των σύγχρονων υπολογιστών. Από τα
+      επιμέρους στοιχεία του χώρου αυτού θα επιλεγεί ένα σύνολο ως
+      αντικείμενο μελέτης της διπλωματικής εργασίας. Σκοπός της
+      εργασίας είναι γραφτεί ένα μικρό πρόγραμμα που θα αναδεικνύει
+      την ύπαρξη του καθενός καθώς και την επίδρασή του στην
+      επίδοση -- είτε ποιοτικά, είτε ποσοτικά. Τα προγράμματα αυτά
+      θα συγκεντρωθούν σε μια βιβλιοθήκη. Με χρήση της βιβλιοθήκης
+      θα μελετηθούν διαφορετικοί επεξεργαστές και για κάθε έναν θα
+      εξαχθεί ένα αρχιτεκτονικό 'στίγμα' επιδόσεων με βάση τη
+      συμπεριφορά του στα επιμέρους θέματα που αναδεικνύουν τα
+      προγράμματα.</p>
+
+      <p>Τα αποτελέσματα της συνολικής μελέτης θα προσφέρουν τη
+      γνώση και την τεχνική ώστε να μπορούν να συζητηθούν ερωτήματα
+      του είδους που παρουσιάστηκαν προηγουμένως.</p>
+
+      <p>Ακολουθεί περιγραφή της εργασίας και μία προτεινόμενη
+      διάρθρωση σε φάσεις. Στη συνέχεια παρατίθενται λίστες με
+      απαιτήσεις, αναμενόμενα κέρδη καθώς και ενδεικτικές λίστες με
+      ζητήματα και προγραμματιστικές τεχνικές τα οποία θα μπορούσαν
+      να απασχολήσουν το φοιτητή. Στο τέλος παρατίθεται λίστα με
+      τους διαφορετικούς επεξεργαστές που είναι διαθέσιμοι για
+      μελέτη στο Εργαστήριο Υπολογιστικών Συστημάτων.</p>
+    </div>
+
+    <div class="section">
+      <h1><a id="id3" name="id3">Περιγραφή Εργασίας</a></h1>
+
+      <p>Η τεχνολογία των επεξεργαστών των υπολογιστών έχει αφήσει
+      πίσω της την εποχή που η συχνότητα του ρολογιού αποτελούσε
+      τον κυρίαρχο παράγοντα των επιδόσεων. Πλέον η βελτίωση των
+      επιδόσεων διεκδικείται με την εξυπνότερη και πολυπλοκότερη
+      χρήση της εκθετικά αυξανόμενης χωρητικότητας των
+      ολοκληρωμένων κυκλωμάτων. Οι επεξεργαστές και η ιεραρχία της
+      μνήμης αποκτούν περισσότερη λογική, οι επεξεργαστές
+      οργανώνονται σε πολυπύρηνες αρχιτεκτονικές, ενώ οι
+      περιφερειακές συσκευές τους ανταγωνίζονται ουσιωδώς για την
+      πρόσβαση της μνήμης.</p>
+
+      <p>Σε αυτό το πολύπλοκο σκηνικό η επίδοση του λογισμικού
+      εξαρτάται από πλήθος σημαντικών παραγόντων που σχετίζονται με
+      την οργάνωση των επεξεργαστών και την υποστήριξή τους από
+      τους μεταγλωττιστές. Είναι χρήσιμο κανείς να αποκτήσει σαφή
+      γνώση του ρόλου των διαφόρων αυτών παραγόντων έτσι ώστε να
+      μπορεί να κρίνει, να επιλέγει και να βελτιστοποιεί λύσεις σε
+      υπολογιστικά προβλήματα, μέσω κατάλληλης επιλογής υλικού και
+      λογισμικού. Δεν μπορεί να πει κανείς ότι όλα τα προβλήματα
+      μπορούν να προσεγγισθούν με ένα απλό μοντέλο. Στην αγορά
+      υπάρχουν πολλά είδη επεξεργαστών με διαφορετικά
+      χαρακτηριστικά -- υπερμεγέθεις περίπλοκοι πυρήνες, πολλαπλοί
+      απλούστεροι πυρήνες, απλοί επεξεργαστές ενσωματωμένων
+      συστημάτων. Επίσης υπάρχουν πολλών ειδών εφαρμογές με
+      διαφορετικές απαιτήσεις -- υπολογιστικές επιστημονικές
+      εφαρμογές, εξυπηρετητές περιεχόμενου, λογισμικό δικτύου,
+      λογισμικό επεξεργασίας πολυμέσων. Σε κάθε περίπτωση όμως, η
+      αξιολόγηση των επιμέρους παραγόντων που επηρεάζουν την
+      επίδοση είναι κρίσιμη για την κατανόηση και την βέλτιστη
+      εκμετάλλευση των διαθέσιμων τεχνολογιών.</p>
+
+      <p><em>Στο πλαίσιo της διπλωματικής του εργασίας ο φοιτητής
+      καλείται να μελετήσει την αρχιτεκτονική σύγχρονων
+      επεξεργαστών και να επινοήσει τρόπους να εκθέσει και να
+      αξιολογήσει τη συμβολή των διαφόρων χαρακτηριστικών τους στην
+      επίδοσή τους. Συγκεντρώνοντας όλα τα προγράμματα που θα
+      αναπτυχθούν, θα δημιουργηθεί μια βιβλιοθήκη και ένα εργαλείο
+      με το οποίο θα μελετηθούν σύγχρονοι επεξεργαστές, ποιοτικά
+      και/ή ποσοτικά, ως προς τα επιμέρους χαρακτηριστικά τους.
+      Καταγράφοντας το στίγμα των επιδόσεων κάθε επεξεργαστή θα
+      καταστρωθεί ένας αρχιτεκτονικός χάρτης που θα αποδίδει
+      εποπτικά τη συμβολή των διαφόρων παραγόντων στον τελικό χρόνο
+      εκτέλεσης των εφαρμογών.</em></p>
+
+      <p>Τα προγράμματα που θα περιέχει η βιβλιοθήκη ενδεικτικά θα
+      μπορούσαν να έχουν ως αντικείμενο:</p>
+
+      <blockquote>
+        <ul class="simple">
+          <li>Μέτρηση μεγέθους cache, cacheline</li>
+
+          <li>Μέτρηση ρυθμού πρόσβασης στη μνήμη</li>
+
+          <li>Μέτρηση πλήθους γεγονότων στην ιεραρχία μνήμης (cache
+          load / writeback / miss)</li>
+
+          <li>Μέτρηση πλήθους γεγονότων στον επεξεργαστή
+          (Instructions per Clock, Branch mispredictions)</li>
+
+          <li>κ.ά.</li>
+        </ul>
+      </blockquote>
+
+      <p>Ακολουθεί η προτεινόμενη διάρθρωση σε φάσεις καθώς και
+      ενδεικτικές λίστες με θέματα και τεχνικές που θα μπορούσαν να
+      μελετηθούν κατά τη διάρκεια της εργασίας.</p>
+    </div>
+
+    <div class="section">
+      <h1><a id="id4" name="id4">Διάρθρωση σε Φάσεις</a></h1>
+
+      <div class="section">
+        <h2><a id="id5" name="id5">Πρώτη φάση</a></h2>
+
+        <ul class="simple">
+          <li>Μελέτη της βιβλιογραφίας σχετικά με τα σημαντικότερα
+          αρχιτεκτονικά χαρακτηριστικά των επεξεργαστών τα οποία
+          διαμορφώνουν την επίδοσή τους.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2><a id="id6" name="id6">Δεύτερη φάση</a></h2>
+
+        <ul class="simple">
+          <li>Επιλογή ενός συνόλου θεμάτων προς μελέτη. Μια
+          ενδεικτική λίστα θεμάτων παρατίθεται πιο κάτω με τον
+          τίτλο '<em>Αρχιτεκτονικά Θέματα ...</em>'</li>
+
+          <li>Για κάθε χαρακτηριστικό θα υλοποιηθεί:</li>
+        </ul>
+
+        <blockquote>
+          <ul class="simple">
+            <li>Πρόγραμμα που θα αναδεικνύει τη συμβολή του στην
+            επίδοση του επεξεργαστή ποιοτικά και αν είναι δυνατόν,
+            ποσοτικά. Ενδεικτικά αναφέρονται προγραμματικές
+            τεχνικές στην πιο κάτω λίστα με τίτλο
+            '<em>Προγραμματιστικές τεχνικές ...</em>'</li>
+
+            <li>Σχέδιο για την επαλήθευση και επικύρωση των
+            αποτελεσμάτων.</li>
+
+            <li>Τεκμηρίωση για τις παραπάνω εργασίες.</li>
+          </ul>
+        </blockquote>
+      </div>
+
+      <div class="section">
+        <h2><a id="id7" name="id7">Τρίτη φάση</a></h2>
+
+        <ul class="simple">
+          <li>Συλλογή όλων των αναπτυχθέντων προγραμμάτων σε
+          βιβλιοθήκη και δημιουργία εργαλείου μελέτης
+          επεξεργαστών.</li>
+
+          <li>Μελέτη διαφόρων επεξεργαστών -- εξαγωγή και
+          επαλήθευση του αρχιτεκτονικού τους στίγματος. Το
+          Εργαστήριο Υπολογιστικών Συστημάτων διαθέτει πολλούς
+          διαφορετικούς επεξεργαστές στον εξοπλισμό του που θα
+          μπορούσαν να μελετηθούν. Μια σχετική λίστα παρατίθεται
+          παρακάτω με τίτλο '<em>Διαθέσιμοι Επεξεργαστές
+          ...</em>'</li>
+
+          <li>Εξαγωγή και καταγραφή συμπερασμάτων.</li>
+        </ul>
+
+        <blockquote>
+          <ul class="simple">
+            <li>Σημαντικότητα των διαφόρων αρχιτεκτονικών
+            χαρακτηριστικών.</li>
+
+            <li>Αποτελεσματικότητα των διαφόρων προγραμματιστικών
+            τεχνικών.</li>
+
+            <li>Εξέλιξη των επεξεργαστών και της επίδοσής
+            τους.</li>
+
+            <li>Μελλοντικές εξελίξεις.</li>
+          </ul>
+        </blockquote>
+      </div>
+    </div>
+
+    <div class="section">
+      <h1><a id="id8" name="id8">Γνώσεις που απαιτούνται:</a></h1>
+
+      <blockquote>
+        <ul class="simple">
+          <li>Προγραμματισμός Υπολογιστών</li>
+
+          <li>Γλώσσες προγραμματισμού C / Assembly.</li>
+
+          <li>Οργάνωση Υπολογιστών.</li>
+        </ul>
+      </blockquote>
+    </div>
+
+    <div class="section">
+      <h1><a id="id9" name="id9">Γνώσεις που θα
+      αποκτηθούν:</a></h1>
+
+      <blockquote>
+        <ul class="simple">
+          <li>Πολύ καλή γνώση αρχιτεκτονικής και προγραμματισμού
+          σύγχρονων επεξεργαστών,</li>
+
+          <li>Προγραμματιστικές τεχνικές για την παρακολούθηση της
+          επίδοσης και τη βελτιστοποίηση κώδικα.</li>
+
+          <li>Σε βάθος γνώσεις και γενική εποπτεία σε θέματα
+          οργάνωσης και προγραμματισμού υπολογιστών. Τα ερωτήματα
+          που παρουσιάζονται στην αρχή του παρόντος κειμένου θα
+          μπορούν να συζητηθούν ουσιαστικά.</li>
+        </ul>
+      </blockquote>
+    </div>
+
+    <div class="section">
+      <h1><a id="id10" name="id10">Αρχιτεκτονικά θέματα που
+      διαμορφώνουν την επίδοση</a></h1>
+
+      <p>Μονολεκτικά (και ίσως αδόκιμα) αναφέρονται θέματα που
+      διαμορφώνουν την επίδοση. Ο φοιτητής καλείται να επιλέξει και
+      να μελετήσει <em>όσα από αυτά τα θέματα επιθυμεί</em> ή και
+      από άλλα που θα προτείνει.</p>
+
+      <blockquote>
+        <ul class="simple">
+          <li>Instruction Decoding Rate</li>
+
+          <li>Instruction Issuing Rate</li>
+
+          <li>Instructions Per Clock (IPC)</li>
+
+          <li>Pipeline Stall</li>
+
+          <li>Branch Misprediction Penalty</li>
+
+          <li>L1 / L2 / Main Memory Latency</li>
+
+          <li>Memory Throughput</li>
+
+          <li>Memory Access Patterns</li>
+
+          <li>Value Forwarding</li>
+
+          <li>Hardware Prefetching</li>
+
+          <li>Software Prefetching</li>
+
+          <li>Special Memory Operations (Write-Combining,
+          UnCachable regions, Streaming)</li>
+
+          <li>Vector Processing</li>
+
+          <li>Instruction Execution Latency</li>
+
+          <li>Instruction Scheduling</li>
+
+          <li>Shared Pipelines</li>
+
+          <li>Shared Cache (MultiCores)</li>
+
+          <li>Shared / Partitioned Execution Resources (SMT)</li>
+
+          <li>Out of Order window size</li>
+        </ul>
+      </blockquote>
+    </div>
+
+    <div class="section">
+      <h1><a id="id11" name="id11">Προγραμματιστικές τεχνικές που
+      βελτιώνουν την επίδοση</a></h1>
+
+      <p>Μονολεκτικά αναφέρονται τεχνικές που μπορούν να ληφθούν
+      υπόψη στην προσπάθεια της ανάδειξης μέσω προγραμματισμού των
+      υπό μελέτη θεμάτων.</p>
+
+      <blockquote>
+        <ul class="simple">
+          <li>Loop unrolling</li>
+
+          <li>Vectorizing</li>
+
+          <li>False dependency elimination</li>
+
+          <li>Branch elimination</li>
+
+          <li>Prefetching</li>
+
+          <li>Instruction elimination</li>
+
+          <li>Instruction Scheduling</li>
+
+          <li>32/64/128 bit processing</li>
+
+          <li>Special purpose instructions</li>
+        </ul>
+      </blockquote>
+    </div>
+
+    <div class="section">
+      <h1><a id="id12" name="id12">Διαθέσιμοι επεξεργαστές στο
+      Εργαστήριο Υπολογιστικών Συστημάτων</a></h1>
+
+      <p>Στο Εργαστήριο αυτή τη στιγμή είναι διαθέσιμοι οι παρακάτω
+      διαφορετικοί επεξεργαστές. Από αυτούς ο φοιτητής καλείται να
+      επιλέξει <em>όσους θέλει</em> για να τους συμπεριλάβει στη
+      μελέτη του.</p>
+
+      <blockquote>
+        <ul class="simple">
+          <li><strong>AMD Opteron</strong> (64-bit, Multicore)</li>
+
+          <li><strong>AMD Athlon XP</strong></li>
+
+          <li><strong>Intel Woodcrest</strong> (Core 2 Server,
+          <em>new</em>!)</li>
+
+          <li><strong>Intel Itanium 2</strong></li>
+
+          <li><strong>Intel Pentium IV</strong> (Xeon,
+          Hyperthreading, 64-bit)</li>
+
+          <li><strong>Intel Pentium III</strong> (Xeon)</li>
+
+          <li><strong>Intel Pentium II</strong></li>
+
+          <li><strong>OLPC (AMD Geode)</strong> ($100 laptop --
+          <em>new</em>!)</li>
+
+          <li>Old UltraSPARCs (RISC)</li>
+        </ul>
+      </blockquote>
+
+      <p>Σημειώσεις:</p>
+
+      <blockquote>
+        <ul class="simple">
+          <li>Ο Intel Woodcrest είναι η έκδοση 'server' της
+          καινούριας γενιάς επεξεργαστών της Intel, Core 2. Το
+          εμπορικό του όνομα είναι Xeon 5100.</li>
+
+          <li>To One Laptop Per Child (OLPC, <a class="reference"
+          href=
+          "http://www.laptop.org/">http://www.laptop.org/</a>),
+          είναι ένα project που ξεκίνησε με το Nicholas Negroponte
+          στο M.I.T. με στόχο την παραγωγή ενός φθηνού laptop το
+          οποίο θα μπορεί να χρησιμοποιηθεί για την εκπαίδευση των
+          παιδιών σε φτωχές χώρες. Το εργαστήριο διαθέτει
+          αναπτυξιακά boards τα οποία θα μπορούσαν να
+          μελετηθούν.</li>
+
+          <li>Ενδέχεται στο άμεσο μέλλον να υπάρχει διαθέσιμος και
+          επεξεργαστής <strong>IBM Cell</strong>. Ο επεξεργστής
+          αυτός θα χρησιμοποιηθεί στο PlayStation 3 ενώ
+          χρησιμοποιείται και σε καινούριους servers της IBM. Η
+          αρχιτεκτονική του είναι καινούρια και ιδιαίτερη για τον
+          χώρο των επεξεργαστών γενικού σκοπού. Θα μπορούσε να
+          αποτελέσει ενδιαφέρον αντικείμενο μελέτης λόγω της
+          διαφορετικότητάς του από τους υπόλοιπους επεξεργαστές της
+          λίστας.</li>
+        </ul>
+      </blockquote>
+    </div>
+
+    <div class="section">
+      <h1><a id="id13" name="id13">Σχετικοί Σύνδεσμοι</a></h1>
+
+      <ul>
+        <li>
+          <p class="first">Σύνδεσμοι από το μάθημα '<em>Προηγμένα
+          Θέματα Οργάνωσης Υπολογιστών</em>'</p>
+
+          <p><a class="reference" href=
+          "http://www.cslab.ece.ntua.gr/courses/advcomparch/links.0">
+          http://www.cslab.ece.ntua.gr/courses/advcomparch/links.0</a></p>
+        </li>
+
+        <li>
+          <p class="first">IBM Cell processor</p>
+
+          <p><a class="reference" href=
+          "http://www.research.ibm.com/cell/">http://www.research.ibm.com/cell/</a></p>
+        </li>
+
+        <li>
+          <p class="first">One Laptop Per Child (OLPC)</p>
+
+          <p><a class="reference" href=
+          "http://www.laptop.org/">http://www.laptop.org/</a></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

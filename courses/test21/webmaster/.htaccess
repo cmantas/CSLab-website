@@ -1,0 +1,12 @@
+RewriteEngine on
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?page=$1 
+
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+	
+AuthName "test21 Webmaster Page"
+AuthType Basic
+AuthBasicProvider file
+AuthUserFile /var/www/cslab/courses/test21/webmaster/.htpasswd
+Require valid-user

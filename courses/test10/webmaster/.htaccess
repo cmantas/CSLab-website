@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ index.php?page=$1 
+
+AuthName "test10 Webmaster Page"
+AuthType Basic
+AuthBasicProvider file
+AuthUserFile /opt/lampp/htdocs/cslab/courses/test10/webmaster/.htpasswd
+AuthGroupFile /opt/lampp/htdocs/cslab/webmaster/.htgroup
+Require valid-user

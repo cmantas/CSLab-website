@@ -1,0 +1,2 @@
+etreksa htpasswd -b .htpasswd takis 0
+etreksa htpasswd -b .htpasswd takis 0

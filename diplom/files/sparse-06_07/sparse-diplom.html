@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 1 September 2005), see www.w3.org" />
+  <meta http-equiv="Content-Type" content=
+  "text/html; charset=utf-8" />
+  <meta name="generator" content=
+  "Docutils 0.4.1: http://docutils.sourceforge.net/" />
+
+  <title>ΒΕΛΤΙΣΤΟΠΟΙΗΣΗ ΕΚΤΕΛΕΣΗΣ ΕΦΑΡΜΟΓΩΝ ΜΕ ΑΡΑΙΟΥΣ ΠΙΝΑΚΕΣ ΣΕ
+  ΣΥΣΤΗΜΑΤΑ ΥΨΗΛΩΝ ΕΠΙΔΟΣΕΩΝ</title>
+<style type="text/css">
+/*<![CDATA[*/
+
+body {
+        font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+        background-color: #ffffff; 
+        color: black;
+}
+
+p {
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
+h1 {
+        text-align: center;
+}
+
+img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        border: 1px dotted black;
+        padding: 2px;
+}
+
+table {
+        border-collapse: collapse;
+        border: 2px solid black;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+
+td, th {
+        border: 1px dotted #b0b0b0;
+        padding: .5em;
+        text-align: left;
+}
+
+tr:hover {
+        background: #f0f0f0;
+}
+
+.section h1 {
+        font-size: 14px;
+        margin-right: 10px;
+        text-align: left;
+}
+
+a:link, a:visited {
+        color: #105ebd;
+        text-decoration: none;
+        border-bottom: 1px dashed  #105ebd;
+}
+
+a:hover, a:active {
+        color:#4a5d74;
+}
+
+ul {
+}
+
+li {
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: justify;
+}
+
+
+blockquote li {
+        padding-top: 1px;
+}
+
+.links p {
+        margin: 0;
+        padding: 0;
+}
+
+p.caption {
+        text-align: center;
+        padding-bottom: 4px;
+        font-style: italic;
+}
+
+/*]]>*/
+</style>
+</head>
+
+<body>
+  <div class="document" id="id1">
+    <h1 class="title">ΒΕΛΤΙΣΤΟΠΟΙΗΣΗ ΕΚΤΕΛΕΣΗΣ ΕΦΑΡΜΟΓΩΝ ΜΕ ΑΡΑΙΟΥΣ
+    ΠΙΝΑΚΕΣ ΣΕ ΣΥΣΤΗΜΑΤΑ ΥΨΗΛΩΝ ΕΠΙΔΟΣΕΩΝ</h1>
+
+    <table class="docinfo" frame="void" rules="none">
+      <col class="docinfo-name" />
+      <col class="docinfo-content" />
+
+      <tbody valign="top">
+        <tr class="field">
+          <th class="docinfo-name">Καθηγητής:</th>
+
+          <td class="field-body">Νεκτάριος Κοζύρης ( <a class=
+          "reference" href=
+          "mailto:nkoziris@cslab.ece.ntua.gr">nkoziris@cslab.ece.ntua.gr</a>
+          )</td>
+        </tr>
+
+        <tr class="field">
+          <th class="docinfo-name">Επικοινωνία:</th>
+
+          <td class="field-body">Γιώργος Γκούμας (<a class=
+          "reference" href=
+          "mailto:goumas@cslab.ece.ntua.gr">goumas@cslab.ece.ntua.gr</a>),
+          Νίκος Αναστόπουλος (<a class="reference" href=
+          "mailto:anastop@cslab.ece.ntua.gr">anastop@cslab.ece.ntua.gr</a>)</td>
+        </tr>
+
+        <tr class="field">
+          <th class="docinfo-name">Άτομα:</th>
+
+          <td class="field-body">1</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="section">
+      <h1><a id="id2" name="id2">Γενικά</a></h1>
+
+      <p>Οι αλγεβρικές πράξεις με αραιούς (sparse) πίνακες (π.χ.
+      πολλαπλασιασμός αραιού πίνακα με διάνυσμα) βρίσκονται στην
+      καρδιά των πλέον υπολογιστικά απαιτητικών εφαρμογών που
+      εκτελούνται αυτή τη στιγμή στα υπερυπολογιστικά συστήματα
+      παγκοσμίως. Για το λόγο αυτό η βελτιστοποίηση της εκτέλεσης
+      των αλγεβρικών πράξεων που περιλαμβάνουν αραιούς πίνακες
+      είναι ζωτικής σημασίας και αποτελεί ιδιαίτερα ενεργό πεδίο
+      στην έρευνα των εφαρμογών που απαιτούν υψηλές επιδόσεις.
+      Καθώς οι αραιοί πίνακες περιλαμβάνουν αριθμό μη μηδενικών
+      στοιχείων σημαντικά μικρότερο από το μέγεθός τους, έχουν
+      προταθεί διάφορες μορφές αποθήκευσης των αραιών πινάκων (π.χ.
+      Compressed Row Storage - CRS, Block Compressed Row Storage -
+      BCRS, Compressed Diagonal Storage - CDS, Jagged Diagonal
+      Storage - JDS, κ.ά.).</p>
+    </div>
+
+    <div class="section">
+      <h1><a id="id3" name="id3">Ζητούμενο</a></h1>
+
+      <p>Στο πλαίσιο της προτεινόμενης διπλωματικής εργασίας θα
+      πραγματοποιηθεί υλοποίηση και εκτέλεση αλγεβρικών πράξεων με
+      αραιούς πίνακες σε αρχιτεκτονικές υψηλών επιδόσεων με
+      πολλαπλές ροές εκτέλεσης (multicores, SMTs, SMPs,PC
+      Clusters). Θα αξιολογηθεί η επίδραση της μορφής αποθήκευσης
+      του αραιού πίνακα στην επίδοση των προγραμμάτων,
+      χρησιμοποιώντας μια σειρά από μετρικές απόδοσης, όπως ο
+      χρόνος εκτέλεσης, τα cache misses, TLB misses, branch
+      mispredictions κ.λπ., που είναι δυνατόν να συλλεχθούν από
+      μηχανισμούς μέτρησης συμβάντων που ενσωματώνουν οι σύγχρονοι
+      επεξεργαστές (performance counters). Θα αναζητηθούν τεχνικές
+      βελτιστοποίησης των εφαρμογών μέσω εναλλακτικών τρόπων
+      αποθήκευσης, μετασχηματισμού του κώδικα εκτέλεσης και χρήσης
+      τεχνικών που αξιοποιούν τα χαρακτηριστικά της πλατφόρμας
+      εκτέλεσης (π.χ. communication overlapping, software
+      prefetching κ.λπ.).</p>
+    </div>
+
+    <div class="section">
+      <h1><a id="id4" name="id4">Στάδια υλοποίησης</a></h1>
+
+      <ol class="arabic simple">
+        <li>Μελέτη της σχετικής βιβλιογραφίας</li>
+
+        <li>Υλοποίηση πράξεων αραιών πινάκων για όλες τις μορφές
+        αποθήκευσης</li>
+
+        <li>Αξιολόγηση αποτελεσμάτων - Εξαγωγή συμπερασμάτων</li>
+
+        <li>Προτάσεις για βελτιστοποιήσεις</li>
+
+        <li>Συγγραφή εργασίας</li>
+      </ol>
+    </div>
+
+    <div class="section">
+      <h1><a id="id5" name="id5">Προαπαιτούμενες Γνώσεις</a></h1>
+
+      <p>Προγραμματισμός σε γλώσσα C, βασικές γνώσεις σε παράλληλη
+      επεξεργασία και αρχιτεκτονική υπολογιστών</p>
+    </div>
+
+    <div class="section">
+      <h1><a id="id6" name="id6">Βιβλιογραφία και
+      σύνδεσμοι</a></h1>
+
+      <ul class="simple">
+        <li>Templates for the Solution of Linear Systems: Building
+        Blocks for Iterative Methods, 2nd Edition, R. Barrett et.
+        al., SIAM, 1994.</li>
+
+        <li>Sparsity: Optimization Framework for Sparse Matrix
+        Kernels, E-J. Im, K. Yelick, and R. Vuduc, International
+        Journal of High Performance Computing Applications, Vol.
+        18, No. 1, 135-158 (2004).</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

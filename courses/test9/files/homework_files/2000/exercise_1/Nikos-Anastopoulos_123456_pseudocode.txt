@@ -1,0 +1,45 @@
+# source s, goal 'goal'
+
+# set of nodes already evaluated
+closed_set = empty
+
+# set of tentative nodes to be evaluated
+open_set = {s}
+
+# cost from source along best known path
+g[s] = 0
+h[s] = heuristic_cost_estimate(s,goal)
+# estimated total cost from source to goal through y
+f[s] = h[s]
+
+# PQ: min priority queue, holding nodes according to value f
+PQ.insert(s)
+
+while open_set != empty :
+    x = PQ.extract_min()
+    if x == goal
+        return;
+
+    open_set.remove(x)
+    closed_set.add(x)
+
+    foreach y adjacent to x: 
+        if closed_set.contains(y)
+            continue;
+        tentative_g = g[x] + dist(x,y)
+
+        if !open_set.contains(y) 
+            open_set.add(y)
+            tentative_is_better = true
+        else if tentative_g < g[y]
+            tentative_is_better = true
+        else
+            tentative_is_better = false
+
+        if tentative_is_better :
+            parent[y] = x
+            g[y] = tentative_g
+            h[y] = heuristic_cost_estimate(y,goal)
+            PQ.update(f[y], g[y] + h[y])
+        
+return -1; 
